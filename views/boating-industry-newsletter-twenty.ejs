@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Boating Inudsty</title>
+</head>
+
+<body>
+    <div>
+<table width="740" cellpadding="0" cellspacing="0" border="0" align="center" style="font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:18px">
+    <tr>
+        <td>
+
+            <table align="center" cellpadding="0" cellspacing="0" border="0" width="740">
+                <tr>
+                    <td align="left" valign="middle" width="438" style="font:10px Arial, Helvetica, sans-serif; line-height:1.2em; padding-left:10px"><custom type="content" name="preheader"></td>
+                    <td align="right" valign="middle" width="437" style="font:10px Arial, Helvetica, sans-serif; line-height:1.2em;">Click here to view <a choice="10" target="_blank" href="@{mv_online_version}@" CLASS="online version">online</a></td>
+                </tr>
+            </table>
+<!-- Header -->
+            <table cellpadding="0" cellspacing="0" border="0" align="center" width="740">
+    <tr>
+     <td width="12"></td>
+        <td width="525" height="90" align="left" valign="middle" style="padding-bottom:10px; font-size:12px"><a href="https://boatingindustry.com/" target="_blank"><img src="https://epgmedia.s3.amazonaws.com/web/boatingindustry/Logo/EnewsHeader.jpeg" alt="Boating Industry" border="0" width="423px"  style="display:block"/></a></td>
+        <td width="10" height="90" valign="middle" align="center"></td>
+        <td width="160" height="90" align="right" valign="middle" bgcolor="#FFFFFF" style="color:#000000; font: 18px Arial, Helvetica, sans-serif;"> <%= month %> <%= day %>, <%= year %></td>
+    <td width="12"></td>
+    </tr>
+</table>
+
+
+<table cellpadding="0" cellspacing="0" border="0" width="740" align="center">
+<tr>
+<td width="147" style="background:#f3f2e8; color:#ffffff; padding:5px 0px 5px 15px; font-weight:bold; font-size:12px" align="center"><a href="https://epgmediallc.com/subscribe/boating-industry/" style="color:#000000; font-weight:bold; font-size:12px; text-decoration:none" target="_blank">SUBSCRIBE</a></td>
+<td width="147" style="background:#f3f2e8; color:#ffffff; padding:5px 0px 5px 15px; font-weight:bold; font-size:12px" align="center"><a href="https://boatingindustry.com/top-100/" style="color:#000000; font-weight:bold; font-size:12px; text-decoration:none" target="_blank">TOP 100</a></td>
+<td width="146" style="background:#f3f2e8; color:#ffffff; padding:5px 0px 5px 15px; font-weight:bold; font-size:12px" align="center"><a href="https://boatingindustry.com/contact-us/" style="color:#000000; font-weight:bold; font-size:12px; text-decoration:none" target="_blank">CONTACT US</a></td>
+<td width="300" style="background:#f3f2e8; color:#ffffff; padding:5px 0px 5px 15px; font-weight:bold; font-size:12px" align="center"><a href="https://boatingindustry.com/" style="color:#000000; font-weight:bold; font-size:12px; text-decoration:none" target="_blank">Read more news at boatingindustry.com</a></td>
+</tr>
+</table>
+<!-- Header END -->
+<!-- Sponsor Content -->
+            <!-- AD SPOT: BEGIN -->
+            <table border="0" align="left" cellpadding="0" cellspacing="0" width="740" style="width: 740px; max-width:740px;">
+				<tr>
+				    <td align="center" bgcolor="#ffffff" style="width:740px;vertical-align:top;">
+				        <custom type="content" name="Sponsor">
+				            <p>!!! --- PUT AD HERE --- !!!</p>
+				    </td>
+				</tr>
+            </table>
+            <br/>
+            <table cellpadding="0" cellspacing="0" border="0" width="740" align="center">
+                <tr>
+                    <td width="12"></td>
+                    
+
+                        <table width="740" cellpadding="0" cellspacing="0" border="0" align="leftr" valign="top">
+                            <tr>
+                    <td width="350" bgcolor="#c32429" height="24" valign="middle" align="center" style="color:white; font: 400 18px Arial, Helvetica, sans-serif; text-align:left; padding:5px 0px 5px 15px;">Top News</td>
+                    </tr> 
+      </table>
+									<% for (let item of top_news_items) { %>
+									<table width="740" cellpadding="0" cellspacing="0" border="0" align="left">
+										<tr height="10px"></tr>
+										<tr>
+                                            <td height="25" width="30" align="center" valign="middle"><img src="https://epgmedia.s3.amazonaws.com/email/boatingindustry/enewsletter/2013/images/arrow.png" alt="" height="15" width="15" style="display:block" /></td>
+											<td style="padding:0px 30px 0px 15px;font-family: Arial; font-size: 12px; line-height: 18px;" valign="top">
+												<a alias="Title-<%= item.title %>" href="<%= item.link %>" style="font-size:14px; color:#000000;" target="_blank">
+													<strong><%= item.title %></strong>
+												</a>
+											</td>
+										</tr>
+									</table>
+                    
+                      <% } %>
+                                    <% for (let item of bottom_news_items) { %>
+									<table width="740" cellpadding="0" cellspacing="0" border="0" align="left">
+										<tr height="10px"></tr>
+										<tr>
+                                            <td height="25" width="30" align="center" valign="middle"><img src="https://epgmedia.s3.amazonaws.com/email/boatingindustry/enewsletter/2013/images/arrow.png" alt="" height="15" width="15" style="display:block" /></td>
+											<td style="padding:0px 30px 0px 15px;font-family: Arial; font-size: 12px; line-height: 18px;" valign="top">
+												<a alias="Title-<%= item.title %>" href="<%= item.link %>" style="font-size:14px; color:#000000;" target="_blank">
+													<strong><%= item.title %></strong>
+												</a>
+											</td>
+										</tr>
+									</table>
+                    <% } %>
+            <!--Leaderboard 1-->             
+            <table border="0" align="left" cellpadding="0" cellspacing="0" width="740" style="width: 740px; max-width:740px;">
+				
+				<tr>
+				    <td align="center" bgcolor="#ffffff" style="width:740px;vertical-align:top;">
+				        <custom type="content" name="Leaderboard 3">
+				            <p>!!! --- PUT AD HERE --- !!!</p>
+				    </td>
+				</tr>
+            </table>
+                        
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td height="10" ></td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <table cellpadding="0" cellspacing="0" border="0" width="740">
+									<tr>
+										<td width="586" bgcolor="#007dc3" height="24" valign="middle" align="left" style="color:#FFFFFF; font: 400 18px Arial, Helvetica, sans-serif; text-align:left; padding:5px 0px 5px 15px;">Feature</td>
+									</tr>
+									<% for (let item of featured_items) { %>
+									<tr>
+										<td>
+											<table width="710" cellpadding="0" cellspacing="0" border="0" align="center">
+												<tr>
+													<td style="padding:10px 10px 5px 0;font-family: Arial; font-size: 12px; line-height: 18px;" valign="top">
+														<table cellpadding="0" cellspacing="0" border="0" align="left">
+															<tr>
+																<td style="padding:0 10px 5px 0;mso-table-rspace:5pt;border-collapse:collapse;" valign="top">
+																	<img src="<%= item.image %>" width="200" style="border:none; background:#cfcbcb; display:block" alt="<%= item.title %>"/>
+																</td>
+															</tr>
+														</table>
+														<a alias="Title-<%= item.title %>" href="<%= item.link %>" style="font-size:14px; color:#000000" target="_blank">
+															<strong><%= item.title %></strong>
+														</a>
+														<br/>
+														<%- item.description %>
+														&nbsp;
+														<a alias="Read More-<%= item.title %>" href="<%= item.link %>" style="font-size:13px; color:#cd3134;white-space:nowrap" target="_blank">Read More</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+<% } %>
+            <!--Leaderboard 2-->                                   
+            <table border="0" align="left" cellpadding="0" cellspacing="0" width="740" style="width: 740px; max-width:740px;">
+				<tr>
+				    <td align="center" bgcolor="#ffffff" style="width:740px;vertical-align:top;">
+				        <custom type="content" name="Leaderboard 3">
+				            <p>!!! --- PUT AD HERE --- !!!</p>
+				    </td>
+				</tr>
+            </table>       
+
+
+
+
+<table cellpadding="0" cellspacing="0" border="0" width="740">
+									<tr>
+										<td width="586" bgcolor="#007dc3" height="24" valign="middle" align="left" style="color:#FFFFFF; font: 400 18px Arial, Helvetica, sans-serif; text-align:left; padding:5px 0px 5px 15px;">Blog</td>
+									</tr>
+									<% for (let item of blog_items) { %>
+									<tr>
+										<td>
+											<table width="710" cellpadding="0" cellspacing="0" border="0" align="center">
+												<tr>
+													<td style="padding:10px 10px 5px 0;font-family: Arial; font-size: 12px; line-height: 18px;" valign="top">
+														<table cellpadding="0" cellspacing="0" border="0" align="left">
+															<tr>
+																<td style="padding:0 10px 5px 0;mso-table-rspace:5pt;border-collapse:collapse;" valign="top">
+																	<img src="<%= item.image %>" width="200" style="border:none; background:#cfcbcb; display:block" alt="<%= item.title %>"/>
+																</td>
+															</tr>
+														</table>
+														<a alias="Title-<%= item.title %>" href="<%= item.link %>" style="font-size:14px; color:#000000" target="_blank">
+															<strong><%= item.title %></strong>
+														</a>
+														<br/>
+														<%- item.description %>
+														&nbsp;
+														<a alias="Read More-<%= item.title %>" href="<%= item.link %>" style="font-size:13px; color:#cd3134;white-space:nowrap" target="_blank">Read More</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+
+                     <% } %>               
+            <!--Leaderboard 3-->                                   
+            <table border="0" align="left" cellpadding="0" cellspacing="0" width="740" style="width: 740px; max-width:740px;">
+				<tr>
+				    <td align="center" bgcolor="#ffffff" style="width:740px;vertical-align:top;">
+				        <custom type="content" name="Leaderboard 4">
+				            <p>!!! --- PUT AD HERE --- !!!</p>
+				    </td>
+				</tr>
+            </table> 
+                                    
+<table cellpadding="0" cellspacing="0" border="0" width="740">
+        <tr>
+            <td height="10" ></td>
+        </tr>
+            <tr>
+                <td width="740" bgcolor="#007dc3" height="24" valign="middle" align="left" style="color:#FFFFFF; font: 400 18px Arial, Helvetica, sans-serif; text-align:left; padding:5px 0px 5px 15px;">In This Issue</td>
+            </tr> 
+                <tr>
+                <tr height="10">
+                </tr>    
+<td>
+
+<!-- Feature-->
+
+<table cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="white">
+                <tr>
+                    <td valign="top" align="left" width="288">
+<table border="0" align="center" cellpadding="0" cellspacing="0" width="300" hight="250">
+										<tr>
+											<td height="10" colspan="4"></td>
+										</tr>
+										<tr>
+											<td align="center" bgcolor="#ffffff" style="width:740px;vertical-align:top;">
+												<custom type="content" name="leaderboard 8">
+												<p>!!! --- PUT MAGAZINE ISSUE HERE --- !!!</p>
+											</td>
+										</tr>
+										<tr>
+											<td height="10"></td>
+										</tr>
+									</table>
+
+                    </td>
+                    <td valign="top">
+<table width="395" cellpadding="0" cellspacing="0" border="0" align="left" valign="top">
+                            <tr>
+                    <td width="350"  height="24" valign="middle" align="left" style="color:black; font: 400 18px Arial, Helvetica, sans-serif; text-align:left; padding:5px 0px 5px 15px;">Features and Columns</td>
+                    </tr> 
+      </table>
+									<% for (let item of features_columns_items) { %>
+									<table cellpadding="0" cellspacing="0" border="0" align="left">
+										<tr height="10px"></tr>
+										<tr>
+                                            <td height="25" width="30" align="center" valign="middle"><img src="https://epgmedia.s3.amazonaws.com/email/boatingindustry/enewsletter/2013/images/arrow.png" alt="" height="15" width="15" style="display:block" /></td>
+											<td style="padding:0px 30px 0px 15px;font-family: Arial; font-size: 12px; line-height: 18px;" valign="top">
+												<a alias="Title-<%= item.title %>" href="<%= item.link %>" style="font-size:14px; color:#000000;" target="_blank">
+													<strong><%= item.title %></strong>
+												</a>
+											</td>
+										</tr>
+									</table>
+                      <% } %>
+
+                        
+                        
+
+                    </td>
+                </tr>
+            </table>                       
+</td>
+</tr>
+</table>
+         
+
+
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                    <td width="12"></td>
+                </tr>
+            </table>
+
+
+                                </td>
+                                
+                            </tr>
+                        </table>
+
+        </td>
+    </tr>
+</table>
+</div>
+ <custom name="opencounter" type="tracking">
+  <p align="center" style="text-align: center;"></p><p align="center"><span xml="lang">This email was sent to you on behalf of <span xml="lang">Boating Industry <br />  EPG Media &amp; Specialty Information<br />
+  </span><span xml="lang">10405 Sixth Ave N,  Suite 210, Minneapolis, MN 55441 <br /> 
+    For more news and information visit </span><a href="https://www.boatingindustry.com/"><span xml="lang">https://www.boatingindustry.com/</span></a> and the
+            <a href="https://epgmediallc.com/subscribe/">
+				<span xml="lang">
+					Subscription Center
+				</span>
+			</a>
+     <span xml="lang">Copyright 2018 by EPG Media &amp; Specialty Information </span><br />
+<a href="https://epgmediallc.com/privacy-policy/" target="_blank">Privacy Policy</a><br />
+<a href="@{confirmunsubscribelink}@"><span xml="lang">opt out</span></a><br />
+<a href="@{forwardtoafriendlink}@"><span xml="lang">Refer a Friend</span></a> <span xml="lang"> </span> </span></p>
+  <p align="center" style="text-align: center;"><span style="font-family: 'Calibri','sans-serif'; font-size: 10pt;" xml="lang"><br /><span style="color: red;" xml="lang"></span></span></p>
+<custom name="opencounter" type="tracking">
+</body>
+</html>
+
+

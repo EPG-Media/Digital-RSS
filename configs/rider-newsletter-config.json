@@ -1,0 +1,29 @@
+{
+	"template": "https://epgmedia.s3.amazonaws.com/DigitalRSS/views/rider-newsletter.ejs",
+	"feeds": [
+		{
+			"name": "enews_one_items",
+			"link": "https://ridermagazine.com/category/enews-one/?feed=xtxml"
+		},
+		{
+			"name": "enews_two_items",
+			"link": "https://ridermagazine.com/category/enews-two/?feed=xtxml"
+		},
+		{
+			"name": "enews_three_items",
+			"link": "https://ridermagazine.com/category/enews-three/?feed=xtxml"
+		},
+		{
+			"name": "enews_four_items",
+			"link": "https://ridermagazine.com/category/enews-four/?feed=xtxml"
+		},
+		{
+			"name": "editors_picks_items",
+			"link": "https://ridermagazine.com/category/editors-picks/?feed=xtxml"
+		},
+		{
+			"name": "most_read_items",
+			"link": "https://ridermagazine.com/category/most-read/?feed=xtxml"
+		}
+	]
+}

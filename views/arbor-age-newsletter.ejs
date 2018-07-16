@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Arbor Age Alert</title>
+</head>
+
+<body>
+	<table width="740" cellpadding="0" cellspacing="0" border="0" align="center" style="font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:18px">
+		<tr>
+			<td style="border:1px solid #000000;">
+				<table align="center" cellpadding="0" cellspacing="0" border="0" width="740">
+			    <tr>
+      		  <td align="left" valign="middle" width="438" style="font:10px Arial, Helvetica, sans-serif; line-height:1.2em; padding-left:10px">Arbor Age Alert</td>
+        		<td align="right" valign="middle" width="437" style="font:10px Arial, Helvetica, sans-serif; line-height:1.2em;">
+							Click here to view
+							<a choice="10" target="_blank" href="@{mv_online_version}@" CLASS="online version">online</a>
+						</td>
+    			</tr>
+				</table>
+
+				<!-- 728x90 AD BANNER -->
+				<table border="0" align="center" cellpadding="0" cellspacing="0" width="740" style="width: 740px; max-width:740px;">
+				    <tr>
+				        <td height="10" colspan="4"></td>
+				    </tr>
+				        <tr>
+				            <td align="center" bgcolor="#ffffff" style="width:740px;vertical-align:top;">
+				<!-- CUSTOM: leaderboard1 -->
+								<custom type="content" name="Leaderboard 1">
+								<p>!!! --- PUT AD HERE --- !!!</p>
+				            </td>
+				        </tr>
+				    <tr>
+				        <td height="10"></td>
+				    </tr>
+				</table>
+
+				<table cellpadding="0" cellspacing="0" border="0" align="center" width="740">
+					<tr>
+						<td width="6"></td>
+						<td width="728" height="90" align="left" valign="middle" style="padding-bottom:10px">
+							<a href="https://arborage.com/" target="_blank">
+								<img src="https://epgmedia.s3.amazonaws.com/email/arborage/AA_Enewsletters/images/AA-header.jpg" alt="OPExtra" border="0" width="504" height="67"/>
+							</a>
+							<br/>&nbsp;&nbsp;NEWS FOR COMMERCIAL, MUNICIPAL &amp; UTILITY ARBORISTS
+						</td>
+						<td width="6"></td>
+					</tr>
+				</table>
+
+				<table cellpadding="0" cellspacing="0" border="0" width="740" align="center">
+					<tr>
+						<td width="6"></td>
+						<td width="160" align="right" valign="middle" bgcolor="#FFFFFF" style="color:#000000; font: 16px Arial, Helvetica, sans-serif; font-weight:bold;padding-right:10px">
+							<%= month %> <%= day %>, <%= year %>
+						</td>
+						<td width="81" style="background:#5b8521; color:#ffffff; padding:5px 0px 5px 15px; font-weight:bold; font-size:12px" align="center">
+							<a href="https://epgmediallc.com/subscribe/arborage/" target="_blank" style="text-decoration:none; color:#ffffff;">SIGNUP</a>
+						</td>
+						<td width="81" style="background:#5b8521; color:#ffffff; padding:5px 0px 5px 15px; font-weight:bold; font-size:12px" align="center">
+							<a href="https://arborage.com/digital-edition/" target="_blank" style="text-decoration:none; color:#ffffff;">ARCHIVE</a>
+						</td>
+						<td width="82" style="background:#5b8521; color:#ffffff; padding:5px 0px 5px 15px; font-weight:bold; font-size:12px" align="center">
+							<a href="https://arborage.com/advertising-staff/" target="_blank" style="text-decoration:none; color:#ffffff;">ADVERTISE</a>
+						</td>
+						<td width="330" style="background:#5b8521; color:#ffffff; padding:5px 0px 5px 15px; font-weight:bold; font-size:12px" align="center">
+							<a href="https://arborage.com/" style="color:#ffffff; text-decoration:none" target="_blank">Read more news at arborage.com</a>
+						</td>
+					</tr>
+				</table>
+
+				<!-- 728x90 AD BANNER -->
+				<table border="0" align="center" cellpadding="0" cellspacing="0" width="740" style="width: 740px; max-width:740px;">
+				    <tr>
+				        <td height="10" colspan="4"></td>
+				    </tr>
+				        <tr>
+				            <td align="center" bgcolor="#ffffff" style="width:740px;vertical-align:top;">
+				<!-- CUSTOM: leaderboard1 -->
+								<custom type="content" name="Sponsor Ad">
+								<p>!!! --- PUT AD HERE --- !!!</p>
+				            </td>
+				        </tr>
+				    <tr>
+				        <td height="10"></td>
+				    </tr>
+				</table>
+                
+				<table cellpadding="0" cellspacing="0" border="0" width="740" align="center">
+					<tr>
+						<td width="12"></td>
+						<td width="120" valign="top">
+				
+                <!-- Tower AD  -->
+                <table border="0" align="center" cellpadding="0" cellspacing="0" width="120" style="width: 120px; max-width:160px;">
+									 	<tr>
+											<td height="10" colspan="4"></td>
+										</tr>
+										<tr>
+											<td align="center" bgcolor="#ffffff" style="width:740px;vertical-align:top;">
+												<!-- CUSTOM: leaderboard1 -->
+												<custom type="content" name="tower ad 1">
+												<p>!!! --- PUT AD HERE --- !!!</p>
+											</td>
+										</tr>
+										<tr>
+											<td height="10"></td>
+										</tr>
+									</table>
+						</td>
+						<td width="10"></td>
+						<td width="586" valign="top">
+
+							<!-- Featured Items: BEGIN -->
+
+							<table cellpadding="0" cellspacing="0" border="0" width="586">
+								<tr>
+									<td width="586" bgcolor="#7b7b7b" height="24" valign="middle" align="left" style="color:#FFFFFF; font: 400 18px Arial, Helvetica, sans-serif; text-align:left; padding:5px 0px 5px 15px;">Feature</td>
+								</tr>
+								<% for (let item of featured_items) { %>
+								<tr>
+									<td>
+										<table width="586" cellpadding="0" cellspacing="0" border="0" align="center">
+											<tr>
+												<td style="padding:10px 10px 5px 0;font-family: Arial; font-size: 12px; line-height: 18px;" valign="top">
+													<table cellpadding="0" cellspacing="0" border="0" align="left">
+														<tr>
+															<td style="padding:0 10px 5px 0;mso-table-rspace:5pt;border-collapse:collapse;" valign="top">
+																<img src="<%= item.image %>" width="200" style="border:none; background:#cfcbcb; display:block" alt="<%= item.title %>"/>
+															</td>
+														</tr>
+													</table>
+													<a alias="Title-<%= item.title %>" href="<%= item.link %>" style="font-size:14px; color:#000000;" target="_blank">
+														<strong><%= item.title %></strong>
+													</a>
+													<br/>
+													<%- item.description %>
+													&nbsp;
+													<a alias="Read More-<%= item.title %>" href="<%= item.link %>"  style="font-size:13px; color:#168831;white-space:nowrap" target="_blank">Read More</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<% } %>
+							</table>
+
+							<!-- Featured Items: END -->
+
+							<table cellpadding="0" cellspacing="0" border="0">
+								<tr>
+									<td height="10" ></td>
+								</tr>
+								<tr>
+									<td width="586" bgcolor="#7b7b7b" height="24" valign="middle" align="left" style="color:#FFFFFF; font: 400 18px Arial, Helvetica, sans-serif; text-align:left; padding:5px 0px 5px 15px;">Daily News</td>
+								</tr>
+								<tr>
+									<td>
+
+										<!-- Daily Items: BEGIN -->
+
+										<% for (let i = 0; i < daily_items.length; i++) { %>
+											<% let item = daily_items[i]; %>
+											<% if (i % 2 === 0) { %>
+										<table cellpadding="0" cellspacing="0" border="0" align="center" width="586">
+											<tr>
+												<td valign="top" align="left" width="288">
+											<% } else { %>
+												<td width="288">
+											<% } %>
+													<table width="288" cellpadding="0" cellspacing="0" border="0" align="left">
+														<tr>
+															<% if (i <= 1) { %>
+																<% if (i % 2 === 0) { %>
+															<td style="padding:10px 10px 5px 0;font-family: Arial; font-size: 12px; line-height: 18px;" valign="top">
+																<% } else { %>
+															<td style="padding:10px 10px 5px 10px;font-family: Arial; font-size: 12px; line-height: 18px;" valign="top">
+																<% } %>
+															<% } else { %>
+																<% if (i % 2 === 0) { %>
+															<td style="padding:10px 10px 5px 0;font-family: Arial; font-size: 12px; line-height: 18px; border-top: 1px dashed #999999;" valign="top">
+																<% } else { %>
+															<td style="padding:10px 10px 5px 10px;font-family: Arial; font-size: 12px; line-height: 18px; border-top: 1px dashed #999999;" valign="top">
+																<% } %>
+															<% } %>
+																<a alias="Title-<%= item.title %>" href="<%= item.link %>" style="font-size:14px; color:#000000;" target="_blank">
+																	<strong><%= item.title %></strong>
+																</a>
+																<br/>
+																<%- item.description %>
+																&nbsp;
+																<a alias="Read More-<%= item.title %>" href="<%= item.link %>" style="font-size:13px; color:#168831;white-space:nowrap" target="_blank">Read More</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											<% if (i % 2 === 0) { %>
+												<% if (i <= 1) { %>
+												<td width="10" style="border-right:1px dashed #999999;"></td>
+												<% } else { %>
+												<td width="10" style="border-right:1px dashed #999999; border-top:1px dashed #999999;"></td>
+												<% } %>
+											<% } else { %>
+											</tr>
+										</table>
+											<% } %>
+										<% } %>
+
+										<!-- Daily Items: END -->
+
+										<table cellpadding="0" cellspacing="0" border="0" align="center" width="586">
+											<tr>
+												<td valign="top" align="left" width="288">
+													<table cellpadding="0" cellspacing="0" border="0" align="center" width="586">
+														<tr>
+															<td valign="top" align="left" width="288"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+
+										<!-- Product Items: BEGIN -->
+
+										<table cellpadding="0" cellspacing="0" border="0">
+											<tr>
+												<td height="10" ></td>
+											</tr>
+											<tr>
+												<td width="586" bgcolor="#7b7b7b" height="24" valign="middle" align="left" style="color:#FFFFFF; font: 400 18px Arial, Helvetica, sans-serif; text-align:left; padding:5px 0px 5px 15px;">Product News</td>
+											</tr>
+											<% for (let item of product_items) { %>
+											<tr>
+												<td>
+													<table width="586" cellpadding="0" cellspacing="0" border="0" align="left">
+														<tr>
+															<td style="padding:10px 10px 5px 0;font-family: Arial; font-size: 12px; line-height: 18px;" valign="top">
+																<a alias="Title-<%= item.title %>" href="<%= item.link %>" style="font-size:14px; color:#000000;" target="_blank">
+																	<strong><%= item.title %></strong>
+																</a>
+																<br/>
+																<%- item.description %>
+																&nbsp;
+																<a alias="Title-<%= item.title %>" href="<%= item.link %>" style="font-size:13px; color:#168831;white-space:nowrap" target="_blank">Read More</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<% } %>
+										</table>
+
+										<!-- Product Items: END -->
+
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td width="12"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!-- CUSTOM: tracking -->
+	<custom name="opencounter" type="tracking">
+	<p align="center" style="text-align: center;"></p>
+	<p align="center">
+		<span xml="lang">
+			This email was sent to you on behalf of 
+			<span xml="lang">
+				Arbor Age
+				<br/> 
+				EPG Media LLC and Specialty Information Media, 10405 6th Avenue North, Suite 210, Plymouth, MN 55441
+				<br/>
+				For more news and information visit
+			</span>
+			<a href="https://arborage.com/">
+				<span xml="lang">
+					https://arborage.com/
+				</span>
+			</a>
+            and the
+            <a href="https://epgmediallc.com/subscribe/">
+				<span xml="lang">
+					Subscription Center
+				</span>
+			</a>
+			<span xml="lang">Copyright 2018 by EPG Media &amp; Specialty Information </span><br />
+<a href="https://epgmediallc.com/privacy-policy/" target="_blank">Privacy Policy</a><br />
+<a href="@{confirmunsubscribelink}@"><span xml="lang">opt out</span></a><br />
+<a href="@{forwardtoafriendlink}@"><span xml="lang">Refer a Friend</span></a> <span xml="lang"> </span> </span></p>
+	<p align="center" style="text-align: center;">
+		<span style="font-family: 'Calibri','sans-serif'; font-size: 10pt;" xml="lang">
+			<br/>
+			<span style="color: red;" xml="lang"></span>
+		</span>
+	</p>
+</body>
+</html>

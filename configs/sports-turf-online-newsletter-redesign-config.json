@@ -1,0 +1,24 @@
+{
+	"template": "https://epgmedia.s3.amazonaws.com/DigitalRSS/views/sports-turf-online-newsletter-redesign.ejs",
+	"feeds": [
+		{
+			"name": "featured_items",
+			"link": "https://sportsturfonline.com/category/featured-articles/?feed=xtxml"
+		},
+		{
+			"name": "daily_items",
+			"link": "https://sportsturfonline.com/category/daily-news/?feed=xtxml"
+		},{
+			"name": "daily_two_items",
+			"link": "https://sportsturfonline.com/category/daily-two-news/?feed=xtxml"
+		},
+		{
+			"name": "product_items",
+			"link": "https://sportsturfonline.com/category/product-news/?feed=xtxml"
+		},
+		{
+			"name": "product_two_items",
+			"link": "https://sportsturfonline.com/category/product-two-news/?feed=xtxml"
+		}
+	]
+}

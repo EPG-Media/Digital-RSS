@@ -1,0 +1,17 @@
+{
+	"template": "https://epgmedia.s3.amazonaws.com/DigitalRSS/views/water-management-newsletter.ejs",
+	"feeds": [
+		{
+			"name": "featured_items",
+			"link": "https://landscapeirrigation.com/category/featured-articles/?feed=xtxml"
+		},
+		{
+			"name": "daily_items",
+			"link": "https://landscapeirrigation.com/category/daily-news/?feed=xtxml"
+		},
+		{
+			"name": "product_items",
+			"link": "https://landscapeirrigation.com/category/product-news/?feed=xtxml"
+		}
+	]
+}

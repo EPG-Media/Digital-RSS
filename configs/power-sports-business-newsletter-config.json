@@ -1,0 +1,25 @@
+{
+	"template": "https://epgmedia.s3.amazonaws.com/DigitalRSS/views/power-sports-business-newsletter.ejs",
+	"feeds": [
+		{
+			"name": "top_news_items",
+			"link": "https://powersportsbusiness.com/category/Top-News-Enewsletter/?feed=xtxml"
+		},
+		{
+			"name": "news_items",
+			"link": "https://powersportsbusiness.com/category/news-enewsletter/?feed=xtxml"
+		},
+		{
+			"name": "blog_items",
+			"link": "https://powersportsbusiness.com/category/blog-spotlight/?feed=xtxml"
+		},
+		{
+			"name": "previous_items",
+			"link": "https://powersportsbusiness.com/category/previous-top-daily-stories/?feed=xtxml"
+		},
+		{
+			"name": "print_items",
+			"link": "https://powersportsbusiness.com/category/from-the-print-edition/?feed=xtxml"
+		}
+	]
+}

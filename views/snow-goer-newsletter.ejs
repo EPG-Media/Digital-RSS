@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <link href="https://epgmedia.s3.amazonaws.com/email/snowgoer/2014/SnowGoer_enewsletter.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td style="font: 15px/1.3em arial" width="300" align="left" class="whispertext"><p><em>Snow Goer</em> <%= month %> <%= day %>, <%= year %></p></td>
+        <td width="408" align="right" class="whispertext"><p><a class="Online Version" href="@{mv_online_version}@" target="_blank" choice="10">View this email online</a></p></td>
+    </tr>
+</table>
+<!-- Header -->
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+        <td><a href="https://www.snowgoer.com/" target="_blank"><img src="https://epgmedia.s3.amazonaws.com/email/snowgoer/images/HEADER-OCT17-BIG.jpeg" alt="SnowGoer e-newsletter" width="728" border="0" style="display: block;" /></a></td>
+    	</tr>
+</table>
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+        <td align="right"><a href="https://www.snowgoer.com/" target="_blank"><img src="https://epgmedia.s3.amazonaws.com/email/snowgoer/2015/images/Snowgoerfooter_left2015.jpg" alt="SnowGoer e-newsletter" width="445"  border="0" style="display:block;" /></a></td>
+                <td align="center"><a href="https://www.snowgoer.com/" target="_blank"><img src="https://epgmedia.s3.amazonaws.com/email/snowgoer/2015/images/Snowgoerlink_2015.jpg" alt="SnowGoer e-newsletter" width="222"  border="0" style="display:block;" /></a></td>
+                              <td align="right"><a href="https://twitter.com/snowgoermag" target="_blank"><img src="https://epgmedia.s3.amazonaws.com/email/snowgoer/2015/images/SnowgoerTWitter_2015.jpg" alt="SnowGoer e-newsletter" width="32"  border="0" style="display:block;" /></a></td>
+                                <td align="right"><a href="https://www.facebook.com/SnowGoerMagazine/" target="_blank"><img src="https://epgmedia.s3.amazonaws.com/email/snowgoer/2015/images/SnowgoerFB_2015.jpg" alt="SnowGoer e-newsletter" width="32"  border="0" style="display:block;" /></a></td>
+    	</tr>
+</table>
+<!-- ad -->
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="730">
+  <tr>
+                    <td width="730" style="background-color: #ff6600;
+	color:#ffffff; font-family: arial ; font-size:28px; line-height:24px; font-variant:small-caps; padding: 3px 10px 5px 10px; text-align: left;"></td>
+  </tr>
+	</table>
+                  
+
+										<!-- Daily Items: END -->
+
+										<!-- Product Items: BEGIN -->
+
+<!-- Ads -->
+<table border="0" align="center" cellpadding="0" cellspacing="0" width="740" style="width: 740px; max-width:740px;">
+				    <tr>
+				        <td height="10" colspan="4"></td>
+				    </tr>
+				        <tr>
+				            <td align="center" bgcolor="#ffffff" style="width:740px;vertical-align:top;">
+				<!-- CUSTOM: leaderboard1 -->
+								<custom type="content" name="Leaderboard 1">
+								<p>!!! --- PUT AD HERE --- !!!</p>
+				            </td>
+				        </tr>
+				    <tr>
+				        <td height="10"></td>
+				    </tr>
+				</table>
+    
+ <table cellpadding="0" cellspacing="0" border="0" align="center" width="730" style="padding-bottom: 10px">
+  <tr>
+                    <td width="730" style="background-color: #ff6600;
+	color:#ffffff; font-family: arial ; font-size:28px; line-height:24px; padding: 3px 10px 5px 10px; text-align: left;"></td>
+  </tr>
+	</table>
+       <% for (let i = 0; i < enews_one_items.length; i++) { %>
+											<% let item = enews_one_items[i]; %>
+											<% if (i % 2 === 0) { %>
+										<table cellpadding="0" cellspacing="0" border="0" align="center" width="586">
+											<tr>
+												<td valign="top" align="left" width="288">
+											<% } else { %>
+												<td width="288">
+											<% } %>
+													<table width="288" cellpadding="0" cellspacing="0" border="0" align="left">
+														<tr>
+															<% if (i <= 1) { %>
+																<% if (i % 2 === 0) { %>
+															<td style="padding:10px 10px 5px 0;font-family: Arial; font-size: 12px; line-height: 18px;" valign="top">
+																<% } else { %>
+															<td style="padding:10px 10px 5px 10px;font-family: Arial; font-size: 12px; line-height: 18px;" valign="top">
+																<% } %>
+															<% } else { %>
+																<% if (i % 2 === 0) { %>
+															<td style="padding:10px 10px 5px 0;font-family: Arial; font-size: 12px; line-height: 18px; border-top: 1px dashed #999999;" valign="top">
+																<% } else { %>
+															<td style="padding:10px 10px 5px 10px;font-family: Arial; font-size: 12px; line-height: 18px; border-top: 1px dashed #999999;" valign="top">
+																<% } %>
+															<% } %>
+                                                                <img src="<%= item.image %>" width="350" height="196" style="border:none; background:#cfcbcb; display:block" alt="<%= item.title %>"/>
+                                                            <br>
+																<a alias="Title-<%= item.title %>" href="<%= item.link %>" style=" font-family: arial; font-size: 18px; color: #ff6600;" target="_blank">
+																	<strong><%= item.title %></strong>
+																</a>
+																<br/>
+																
+																&nbsp;<a alias="Read More-<%= item.title %>" href="<%= item.link %>" style="font-size:13px; color:#168831;white-space:nowrap" target="_blank"></a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											<% if (i % 2 === 0) { %>
+												<% if (i <= 1) { %>
+												<td width="10" style="border-right:1px dashed #999999;"></td>
+												<% } else { %>
+												<td width="10" style="border-right:1px dashed #999999; border-top:1px dashed #999999;"></td>
+												<% } %>
+											<% } else { %>
+											</tr>
+										</table>
+											<% } %>
+										<% } %>     
+    
+<table border="0" align="center" cellpadding="0" cellspacing="0" width="740" style="width: 740px; max-width:740px;">
+				    <tr>
+				        <td height="10" colspan="4"></td>
+				    </tr>
+				        <tr>
+				            <td align="center" bgcolor="#ffffff" style="width:740px;vertical-align:top;">
+				<!-- CUSTOM: leaderboard1 -->
+								<custom type="content" name="Leaderboard 1">
+								<p>!!! --- PUT AD HERE --- !!!</p>
+				            </td>
+				        </tr>
+				    <tr>
+				        <td height="10"></td>
+				    </tr>
+				</table>
+            
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="730" style="padding-bottom: 10px">
+  <tr>
+                    <td width="730" style="background-color: #ff6600;
+	color:#ffffff; font-family: arial ; font-size:20px; line-height:20px; padding: 3px 10px 5px 10px; text-align: left;"><strong>Editor's Picks & Most Read Stories</strong></td>
+  </tr>
+	</table>
+            
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="730" >
+                                <% for (let item of enews_two_items) { %>
+									<tr>
+										<td>
+											<table width="710" cellpadding="0" cellspacing="0" border="0" align="center" style="border-bottom: dashed 1px #789bbb;">
+												<tr>
+													<td style="padding:10px 10px 5px 0;font-family: Arial; font-size: 12px; line-height: 18px;" valign="top">
+														<table cellpadding="0" cellspacing="0" border="0" align="right">
+															<tr>
+																<td style="padding:0 10px 5px 0;mso-table-rspace:5pt;border-collapse:collapse;" valign="top">
+																	<img src="<%= item.image %>" width="250" style="padding:0 0px 0px 10px; border:none; display:block" alt="<%= item.title %>"/>
+																</td>
+															</tr>
+														</table>
+														<a alias="Title-<%= item.title %>" href="<%= item.link %>" style=" font-family: arial; font-size: 18px; color: #ff6600;" target="_blank">
+															<strong><%= item.title %></strong>
+														</a>
+														<br/>
+														<%- item.description %>
+														&nbsp;
+														<a alias="Read More-<%= item.title %>" href="<%= item.link %>" style="font-size:13px; color:#cd3134;white-space:nowrap" target="_blank">Read More</a>
+													</td>
+												</tr>
+											</table>
+                                            <% } %>
+										</td>
+									</tr>
+</table> 
+<table border="0" align="center" cellpadding="0" cellspacing="0" width="740" style="width: 740px; max-width:740px;">
+				    <tr>
+				        <td height="10" colspan="4"></td>
+				    </tr>
+				        <tr>
+				            <td align="center" bgcolor="#ffffff" style="width:740px;vertical-align:top;">
+				<!-- CUSTOM: leaderboard1 -->
+								<custom type="content" name="Leaderboard 1">
+								<p>!!! --- PUT AD HERE --- !!!</p>
+				            </td>
+				        </tr>
+				    <tr>
+				        <td height="10"></td>
+				    </tr>
+				</table>
+
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="730">
+                                <% for (let item of enews_three_items) { %>
+									<tr>
+										<td>
+											<table width="710" cellpadding="0" cellspacing="0" border="0" align="center" style="border-bottom: dashed 1px #789bbb;">
+												<tr>
+													<td style="padding:10px 10px 5px 0;font-family: Arial; font-size: 12px; line-height: 18px;" valign="top">
+														<table cellpadding="0" cellspacing="0" border="0" align="right">
+															<tr>
+																<td style="padding:0 10px 5px 0;mso-table-rspace:5pt;border-collapse:collapse;" valign="top">
+																	<img src="<%= item.image %>" width="250" style="border:none; padding:0 0px 0px 10px; display:block" alt="<%= item.title %>"/>
+																</td>
+															</tr>
+														</table>
+														<a alias="Title-<%= item.title %>" href="<%= item.link %>" style=" font-family: arial; font-size: 18px; color: #ff6600;" target="_blank">
+															<strong><%= item.title %></strong>
+														</a>
+														<br/>
+														<%- item.description %>
+														&nbsp;
+														<a alias="Read More-<%= item.title %>" href="<%= item.link %>" style="font-size:13px; color:#cd3134;white-space:nowrap" target="_blank">Read More</a>
+													</td>
+												</tr>
+											</table>
+                                            <% } %>
+										</td>
+									</tr>
+</table> 
+<table border="0" align="center" cellpadding="0" cellspacing="0" width="740" style="width: 740px; max-width:740px;">
+				    <tr>
+				        <td height="10" colspan="4"></td>
+				    </tr>
+				        <tr>
+				            <td align="center" bgcolor="#ffffff" style="width:740px;vertical-align:top;">
+				<!-- CUSTOM: leaderboard1 -->
+								<custom type="content" name="Leaderboard 1">
+								<p>!!! --- PUT AD HERE --- !!!</p>
+				            </td>
+				        </tr>
+				    <tr>
+				        <td height="10"></td>
+				    </tr>
+				</table>
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="730">
+                                <% for (let item of enews_four_items) { %>
+									<tr>
+										<td>
+											<table width="710" cellpadding="0" cellspacing="0" border="0" align="center" style="border-bottom: dashed 1px #789bbb;">
+												<tr>
+													<td style="padding:10px 10px 5px 0;font-family: Arial; font-size: 12px; line-height: 18px;" valign="top">
+														<table cellpadding="0" cellspacing="0" border="0" align="right">
+															<tr>
+																<td style="padding:0 10px 5px 0;mso-table-rspace:5pt;border-collapse:collapse;" valign="top">
+																	<img src="<%= item.image %>" width="250" style="border:none; padding:0 0px 0px 10px; display:block" alt="<%= item.title %>"/>
+																</td>
+															</tr>
+														</table>
+														<a alias="Title-<%= item.title %>" href="<%= item.link %>" style=" font-family: arial; font-size: 18px; color: #ff6600;" target="_blank">
+															<strong><%= item.title %></strong>
+														</a>
+														<br/>
+														<%- item.description %>
+														&nbsp;
+														<a alias="Read More-<%= item.title %>" href="<%= item.link %>" style="font-size:13px; color:#cd3134;white-space:nowrap" target="_blank">Read More</a>
+													</td>
+												</tr>
+											</table>
+                                            <% } %>
+										</td>
+									</tr>
+</table>
+    <table border="0" align="center" cellpadding="0" cellspacing="0" width="740" style="width: 740px; max-width:740px;">
+				    <tr>
+				        <td height="10" colspan="4"></td>
+				    </tr>
+				        <tr>
+				            <td align="center" bgcolor="#ffffff" style="width:740px;vertical-align:top;">
+				<!-- CUSTOM: leaderboard1 -->
+								<custom type="content" name="Leaderboard 1">
+								<p>!!! --- PUT AD HERE --- !!!</p>
+				            </td>
+				        </tr>
+				    <tr>
+				        <td height="10"></td>
+				    </tr>
+				</table>
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="730">
+                                <% for (let item of enews_five_items) { %>
+									<tr>
+										<td>
+											<table width="710" cellpadding="0" cellspacing="0" border="0" align="center" style="border-bottom: dashed 1px #789bbb;">
+												<tr>
+													<td style="padding:10px 10px 5px 0;font-family: Arial; font-size: 12px; line-height: 18px;" valign="top">
+														<table cellpadding="0" cellspacing="0" border="0" align="right">
+															<tr>
+																<td style="padding:0 10px 5px 0;mso-table-rspace:5pt;border-collapse:collapse;" valign="top">
+																	<img src="<%= item.image %>" width="250" style="border:none; padding:0 0px 0px 10px; display:block" alt="<%= item.title %>"/>
+																</td>
+															</tr>
+														</table>
+														<a alias="Title-<%= item.title %>" href="<%= item.link %>" style=" font-family: arial; font-size: 18px; color: #ff6600;" target="_blank">
+															<strong><%= item.title %></strong>
+														</a>
+														<br/>
+														<%- item.description %>
+														&nbsp;
+														<a alias="Read More-<%= item.title %>" href="<%= item.link %>" style="font-size:13px; color:#cd3134;white-space:nowrap" target="_blank">Read More</a>
+													</td>
+												</tr>
+											</table>
+                                            <% } %>
+										</td>
+									</tr>
+</table>
+<table border="0" align="center" cellpadding="0" cellspacing="0" width="740" style="width: 740px; max-width:740px;">
+				    <tr>
+				        <td height="10" colspan="4"></td>
+				    </tr>
+				        <tr>
+				            <td align="center" bgcolor="#ffffff" style="width:740px;vertical-align:top;">
+				<!-- CUSTOM: leaderboard1 -->
+								<custom type="content" name="Leaderboard 1">
+								<p>!!! --- PUT AD HERE --- !!!</p>
+				            </td>
+				        </tr>
+				    <tr>
+				        <td height="10"></td>
+				    </tr>
+				</table>
+  
+    
+            <table cellpadding="10" cellspacing="0" border"0" width="100%" align="center">
+              <tr><td align="center"><font style="font-family:arial; font-size:12px;">This email was sent to you on behalf of <em>Snow Goer </em>magazine.
+<br/> 
+For more news and information, visit <a href="https://www.SnowGoer.com">www.SnowGoer.com</a> and the
+            <a href="https://epgmediallc.com/subscribe/">
+				<span xml="lang">
+					Subscription Center
+				</span>
+			</a>.<br/>
+EPG Media & Specialty Information<br/>
+10405 6th Avenue North, Suite 210, Plymouth, MN 55441 <br />
+<span xml="lang">Copyright 2018 by EPG Media &amp; Specialty Information </span><br />
+<a href="https://epgmediallc.com/privacy-policy/" target="_blank">Privacy Policy</a><br />
+– <a href="@{confirmunsubscribelink}@"><span xml="lang">opt out</span></a><span xml="lang"> </span></br><a href="@{forwardtoafriendlink}@"><span xml="lang">Refer a Friend</span></a></font>
+</td></tr></table><custom name="opencounter" type="tracking">
+                                        
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+	"template": "https://epgmedia.s3.amazonaws.com/DigitalRSS/views/thunder-press-newsletter.ejs",
+	"feeds": [
+		{
+			"name": "enews_one_items",
+			"link": "https://thunderpress.net/category/enews-one?feed=xtxml"
+		},
+		{
+			"name": "enews_two_items",
+			"link": "https://thunderpress.net/category/enews-two?feed=xtxml"
+		},
+		{
+			"name": "most_read_items",
+			"link": "https://thunderpress.net/category/most-read?feed=xtxml"
+		}
+		
+		
+	]
+}

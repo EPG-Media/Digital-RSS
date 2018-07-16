@@ -1,0 +1,21 @@
+{
+	"template": "https://epgmedia.s3.amazonaws.com/DigitalRSS/views/cheers-newsletter.ejs",
+	"feeds": [
+		{
+			"name": "in_the_news",
+			"link": "https://cheersonline.com/category/breaking-news/?feed=xtxml"
+		},
+		{
+			"name": "cheers_feature",
+			"link": "https://cheersonline.com/category/cheers-feature/?feed=xtxml"
+		},
+		{
+			"name": "cheers_product_watch",
+			"link": "https://cheersonline.com/category/products/?feed=xtxml"
+		},
+		{
+			"name": "featured_drink_idea",
+			"link": "https://cheersonline.com/category/featured-drink/?feed=xtxml"
+		}
+	]
+}

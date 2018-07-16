@@ -1,0 +1,33 @@
+{
+	"template": "https://epgmedia.s3.amazonaws.com/DigitalRSS/views/snow-goer-newsletter.ejs",
+	"feeds": [
+		{
+			"name": "enews_one_items",
+			"link": "https://snowgoer.com/category/enews-one/?feed=xtxml"
+		},
+		{
+			"name": "enews_two_items",
+			"link": "https://snowgoer.com/category/enews-two/?feed=xtxml"
+		},
+		{
+			"name": "enews_three_items",
+			"link": "https://snowgoer.com/category/enews-three/?feed=xtxml"
+		},
+		{
+			"name": "enews_four_items",
+			"link": "https://snowgoer.com/category/enews-four/?feed=xtxml"
+		},
+        {
+			"name": "enews_five_items",
+			"link": "https://snowgoer.com/category/enews-five/?feed=xtxml"
+		},
+        {
+			"name": "enews_six_items",
+			"link": "https://snowgoer.com/category/enews-six/?feed=xtxml"
+		},
+        {
+			"name": "enews_seven_items",
+			"link": "https://snowgoer.com/category/enews-seven/?feed=xtxml"
+		}
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"template": "https://epgmedia.s3.amazonaws.com/DigitalRSS/views/boating-industry-newsletter-twenty.ejs",
+	"feeds": [
+		{
+			"name": "top_news_items",
+			"link": "https://boatingindustry.com/category/top-news/?feed=xtxml"
+		},
+		{
+			"name": "blog_items",
+			"link": "https://boatingindustry.com/category/blog-spotlight/?feed=xtxml"
+		},
+		{
+			"name": "featured_items",
+			"link": "https://boatingindustry.com/category/feature/?feed=xtxml"
+		},
+		{
+			"name": "features_columns_items",
+			"link": "https://boatingindustry.com/category/features-and-columns/?feed=xtxml"
+		},
+        {
+			"name": "bottom_news_items",
+			"link": "https://boatingindustry.com/category/bottom-news/?feed=xtxml"
+		}
+	]
+}
+
+	

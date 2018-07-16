@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Cheers Magazine</title>
+</head>
+
+<body>
+<table width="740" cellpadding="0" cellspacing="0" border="0" align="center" style="border: 20px solid #570053; background: #FFFFFF; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; padding: 20px;">
+    <tr>
+        <td style="border:0px">
+
+            <table align="center" cellpadding="0" cellspacing="0" border="0" width="740">
+                <tr>
+                    <td align="right" valign="middle" width="437" style="font:10px Arial, Helvetica, sans-serif; line-height:1.2em;">Click here to view <a choice="10" target="_blank" href="%%view_email_url%%" CLASS="online version">online</a></td>
+                </tr>
+            </table>
+            <!-- 728x90 -->
+            <table border="0" align="center" cellpadding="0" cellspacing="0" width="728">
+                <tr>
+                    <td height="10" colspan="4"></td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#ffffff" style="width:728px;vertical-align:top;"><custom type="content" name="leaderboard1"></custom></td>
+                </tr>
+                <tr>
+                    <td height="10"></td>
+                </tr>
+            </table>
+<!-- 728x90 -->
+            <table border="0" align="center" cellpadding="0" cellspacing="0" width="728">
+                <tr>
+                    <td height="10" colspan="4"></td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#ffffff" style="width:728px;vertical-align:top;"><custom type="content" name="leaderboard2"></custom></td>
+                </tr>
+                <tr>
+                    <td height="10"></td>
+                </tr>
+            </table>
+            <!-- Header -->
+            <table width="728" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;" align="center">
+              <tbody><tr>
+                  <td height="10" colspan="3"></td>
+                  </tr>
+            <tr>
+
+            <td valign="top"><a href="https://cheersonline.com/" target="_blank">
+
+            <img src="https://epgmedia.s3.amazonaws.com/email/cheers/CH_WeeklyEnewsletter/images/header-new-1.jpg" width="629" height="124" style="border:none" alt="Cheers Weekly"></a></td>
+            <td valign="top"><a href="https://www.cheersmagazine.com/ME2/Audiences/Default.asp?AudID=ABA85FDB641B45AFA86FD11AF5D3E698" target="_blank"><img src="https://epgmedia.s3.amazonaws.com/email/cheers/CH_WeeklyEnewsletter/images/header-new-2.jpg" width="52" height="124" style="border:none" alt="Cheers Weekly"></a></td>
+            <td valign="top"><table cellpadding="0" cellspacing="0" border="0">
+            <tbody><tr>
+              <td valign="top"><a href="https://www.facebook.com/CheersMagazineOnline" target="_blank"><img src="https://epgmedia.s3.amazonaws.com/email/cheers/CH_WeeklyEnewsletter/images/facebook.jpg" style="border:none; display:block" width="47" height="33" alt=""></a></td></tr>
+            <tr>
+              <td valign="top"><a href="https://twitter.com/cheersonline" target="_blank"><img src="https://epgmedia.s3.amazonaws.com/email/cheers/CH_WeeklyEnewsletter/images/twitter.jpg" width="47" height="25" style="border:none; display:block" alt="Twitter"></a></td></tr>
+            <tr>
+              <td valign="top"><a href="https://www.Pinterest.com/cheersonline" target="_blank"><img src="https://epgmedia.s3.amazonaws.com/email/cheers/CH_WeeklyEnewsletter/images/pinterest-new.jpg" width="47" height="23" style="border:none; display:block" alt="Facebook"></a></td></tr>
+            <tr>
+              <td valign="top"><a href="https://www.linkedin.com/groups/Cheers-Magazine-4199460" target="_blank"><img src="https://epgmedia.s3.amazonaws.com/email/cheers/CH_WeeklyEnewsletter/images/linkedin.jpg" width="47" height="43" style="border:none; display:block" alt="LinkedIn"></a></td></tr>
+            </tbody></table>
+            </td>
+            </tr>
+            </tbody></table>
+            <!-- Header END -->
+<!-- Sponsor Content -->
+            <table cellpadding="0" cellspacing="0" border="0" align="center" width="740">
+                <tr>
+                    <td align="center" bgcolor="#ffffff" style="width:728px;vertical-align:top;"><custom type="content" name="leaderboard3"></custom></td>
+                </tr>
+                <tr>
+                    <td height="10"></td>
+                </tr>
+            </table>
+            <br/>
+            <table cellpadding="0" cellspacing="0" border="0" width="740" align="center">
+                <tr>
+                    <td width="12"></td>
+                    <td width="120" valign="top">
+
+                       
+
+                    </td>
+                    <td width="10"></td>
+                    <td width="586" valign="top">
+
+                        <table cellpadding="0" cellspacing="0" border="0" width="586">
+                            <tr>
+                                <td width="586" bgcolor="#7b7b7b" height="24" valign="middle" align="left" style="font-family: Arial; padding: 10px 0 5px 0; border-bottom: 1px solid #a7a9ac; font-size: 16px; color: #d2232a; text-transform: uppercase; font-weight: bold; background-color: white; padding: 5px 0px 5px 15px;">In the News</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                    
+                                     <table width="728" cellpadding="0" cellspacing="0" border="0" align="center">
+                                                                                     <tr>
+                                            <td style="padding:20px 30px 0px 15px; line-height: 18px;" valign="top" width="354">
+                                                <% for (let i = 0; i < in_the_news.length; i++) { %>
+												<% let item = in_the_news[i]; %>
+                                                <ul>
+                                                    <li>
+                                                <a alias="Read More-%%=v(@title)=%%" href="<%= item.link %>" style="white-space:nowrap; font-family: Baskerville, serif; font-size:13px; font-weight:bold; color:#69523e;" target="_blank"><%= item.title %></a>
+                                                    </li>
+                                                    </ul>
+                                                <% } %>
+                                                </td>
+                                                </tr>
+                                        </table>
+                                <table border="0" align="center" cellpadding="0" cellspacing="0" width="728">
+                <tr>
+                    <td height="10" colspan="4"></td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#ffffff" style="width:728px;vertical-align:top;"><custom type="content" name="leaderboard4"></custom></td>
+                </tr>
+                <tr>
+                    <td height="10"></td>
+                </tr>
+            </table>
+                        
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td height="10" ></td>
+                            </tr>
+                            <tr>
+                                <table cellpadding="0" cellspacing="0" border="0" align="center" width="728">
+                                    <tr>
+                                <td width="288" height="24" valign="middle" align="left" style="font-family: Arial; padding: 10px 0 5px 0; border-bottom: 1px solid #a7a9ac; font-size: 16px; color: #005387; text-transform: uppercase; font-weight: bold; background-color: white; padding: 5px 0px 5px 15px;">Cheers Features</td>
+                                    </tr>
+                                </table>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <table cellpadding="0" cellspacing="0" border="0" align="center" width="728">
+                                        <tr>
+                                            
+                <% for (let i = 0; i < cheers_feature.length; i++) { %>
+												<% let item = cheers_feature[i]; %>
+
+                                                        <td style="padding:10px 20px 5px 20px;font-family: Arial; font-size: 12px; line-height: 18px; background: #e1ded7;" valign="top" width="288">
+                                                             <table cellpadding="0" cellspacing="0" border="0" align="center">
+                                                            <tr>
+                                                            <td style="padding:0 10px 5px 0;mso-table-rspace:5pt;border-collapse:collapse;" valign="top"><img src="<%= item.image %>" width="200" style="border:none; background:#cfcbcb; display:block" alt="<%= item.image %>" /></td>
+                                                            </tr>
+                                                            </table>
+                                                            <a alias="<%= item.title %>" href="<%= item.link %>" style="font-family: Baskerville, serif; font-size: 22px; color: #7b4418; text-decoration: none; text-transform: uppercase;" target="_blank"><strong><%= item.title %></strong></a><br />
+                                                        </td>
+                                                    <% } %>
+
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                            <table border="0" align="center" cellpadding="0" cellspacing="0" width="728">
+                <tr>
+                    <td height="10" colspan="4"></td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#ffffff" style="width:728px;vertical-align:top;"><custom type="content" name="leaderboard5"></custom></td>
+                </tr>
+                <tr>
+                    <td height="10"></td>
+                </tr>
+            </table>        
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td height="10" ></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="728" bgcolor="#7b7b7b" height="24" valign="middle" align="left" style="font-family: Arial; padding: 10px 0 5px 0; font-size: 16px; color: #7b4418; text-transform: uppercase; font-weight: bold; background-color: white; padding: 5px 0px 15px 15px;">Cheers Product Watch</td>
+                                        </tr> 
+                                        <tr>
+                                            <td>
+
+<table width="728" align="center" cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; font-size:12px; background:#ffffff;">
+
+
+
+
+<tr>
+<td align="center" style="padding-right:10px; padding-left:10px; border-left: 1px solid #f5f2e9;" align="center" >
+    <table style="width: 100%;"><tr>
+            <td style="width: 250px; text-align: center;">
+        <a href="https://beveragedynamics.com/" target="_blank"><img src="https://cheersonline.com/wp-content/uploads/2017/09/Fest-2017.jpg" style="max-height: 150px;" alt="feature image"/></a>
+            <br /><br />
+        </td><td style="vertical-align: middle;">
+        <a href="https://beveragedynamics.com/" style="color:#69523e; text-decoration:none;" target="_blank"><span style="font-family: Baskerville, serif; font-size:13px; text-transform:uppercase; font-weight:bold; color:#69523e;">Modelo Chelada Tamarindo Picante</span></a><br />
+        Flavors of chipotle peppers and tamarind <br /><a href="https://beveragedynamics.com/2017/02/17/modelo-chelada-tamarindo-picante/" style="color:#00acec" target="_blank">Click here to read more.</a>
+                        </td></tr></table>
+</td>
+</tr>
+<tr>
+<td valign="center"  style="padding-right:10px; padding-left:10px; border-left: 1px solid #f5f2e9;" align="center">
+    <table style="width: 100%;"><tr>
+        <td style="width: 250px; text-align: center;">
+        <a href="https://beveragedynamics.com/" target="_blank"><img src="https://cheersonline.com/wp-content/uploads/2017/09/AH6I0291.jpg" alt="feature image" style="max-height: 150px;"  /></a>
+            <br /><br />
+        </td><td style="vertical-align: middle;">
+        <a href="https://beveragedynamics.com/" style="color:#69523e; text-decoration:none;" target="_blank"><span style="font-family: Baskerville, serif; font-size:13px; text-transform:uppercase; font-weight:bold; color:#69523e;">The Dubliner Irish Whiskey 10-Year-Old Single Malt</span></a><br />
+        A new Irish brand continues to grow <br /><a href="https://beveragedynamics.com/2017/02/16/the-dubliner-irish-whiskey-10-year-old-single-malt/" style="color:#00acec" target="_blank">Click here to read more.</a>
+        </td></tr></table>
+</td>
+</tr>
+<tr>
+<td valign="center"  style="padding-right:10px; padding-left:10px; border-left: 1px solid #f5f2e9;" align="center">
+    <table style="width: 100%;"><tr>
+        <td style="width: 250px; text-align: center;">
+        <a href="https://beveragedynamics.com/" target="_blank"><img src="https://cheersonline.com/wp-content/uploads/2017/09/100_Proof_for_Mockup-6.jpg" alt="feature image" style="max-height: 150px;" /></a>
+            <br /><br />
+        </td><td style="vertical-align: middle;">
+<a href="https://beveragedynamics.com/" style="color:#69523e; text-decoration:none;" target="_blank"><span style="font-family: Baskerville, serif; font-size:13px; text-transform:uppercase; font-weight:bold; color:#69523e;">Newport Storm High Test Coffee Stout</span></a><br />
+Made with locally roasted coffee <br /><a href="https://beveragedynamics.com/2017/02/14/newport-storm-high-test-coffee-stout/" style="color:#00acec" target="_blank">Click here to read more.</a>
+    </td></tr></table>
+</td>
+    </tr>
+<tr>
+<td valign="center"  style="padding-right:10px; padding-left:10px; border-left: 1px solid #f5f2e9;" align="center">
+    <table style="width: 100%;"><tr>
+        <td style="width: 250px; text-align: center;">
+        <a href="https://beveragedynamics.com/" target="_blank"><img src="https://cheersonline.com/wp-content/uploads/2017/09/20637914_265980003898626_2119212475865349752_n.jpg" alt="feature image" style="max-height: 150px;" /></a>
+            <br /><br />
+        </td><td style="vertical-align: middle;">
+<a href="https://beveragedynamics.com/2017/02/15/palm-bay-international-tequila-bribon-ravo-vodka/" style="color:#69523e; text-decoration:none;" target="_blank"><span style="font-family: Baskerville, serif; font-size:13px; text-transform:uppercase; font-weight:bold; color:#69523e;">Palm Bay International Tequila Bribón, Råvo Vodka</span></a><br />
+Two new spirits join a growing imports portfolio <br /><a href="https://beveragedynamics.com/2017/02/15/palm-bay-international-tequila-bribon-ravo-vodka/" style="color:#00acec" target="_blank">Click here to read more.</a>
+        </td></tr></table>
+</td>
+</tr>
+    
+</table>
+
+                                            </td>
+                                        </tr>
+                                    </table> 
+                                    <table border="0" align="center" cellpadding="0" cellspacing="0" width="728">
+                <tr>
+                    <td height="10" colspan="4"></td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#ffffff" style="width:728px;vertical-align:top;"><custom type="content" name="leaderboard6"></custom></td>
+                </tr>
+                <tr>
+                    <td height="10"></td>
+                </tr>
+            </table>
+                                </td>
+                            </tr>
+                            <table cellpadding="0" cellspacing="0" border="0" width="586">
+                            <tbody><tr>
+                                <td width="586" bgcolor="#7b7b7b" height="24" valign="middle" align="left" style="font-family: Arial; padding: 10px 0 5px 0; border-bottom: 1px solid #a7a9ac; font-size: 16px; color: #96bc33; text-transform: uppercase; font-weight: bold; background-color: white; padding: 5px 0px 5px 15px;">Featured Drink Idea</td>
+                            </tr>
+                            <tr>
+                                <td>
+                    
+                                     <table width="728" cellpadding="0" cellspacing="0" border="0" align="center">
+                                        <tbody><tr>
+                                            <td style="padding:20px 30px 0px 15px;font-family: Arial; font-size: 12px; line-height: 18px; background: #dbe7bc;" valign="top">
+                                        <table align="left">
+                                                <tr><td style="padding-right:10px;mso-table-rspace:5pt;border-collapse:collapse;"><a href="https://cheersonline.com/2017/09/06/afternoon-in-jalisco/" width="200" style="border:none; background:#cfcbcb; display:block" alt="Featured Drink Idea"><img src="https://cheersonline.com/wp-content/uploads/2017/09/Afternoon-in-Jalisco2.jpg" style="width: 150px; max-width: 150px;"></a></td></tr>
+                                            </table>
+                                                
+                                                <p><a style="font-size:14px; color:#000000;" target="_blank"><strong>Afternoon in Jalisco</strong></a></p>
+                                                1 ½ oz. Don Julio 70 Añejo Claro tequila<br />
+                                                ¼ oz. Absinthe<br />
+                                                1 oz. Ginger beer <br />
+                                                ¾ oz. Fresh lime juice<br />
+                                                ¾ oz. Fresh pineapple juice <br />
+                                                ½ oz. Simple syrup <br />
+                                                <br />
+                                                Combine tequila, lime juice, pineapple juice, simple syrup and absinthe in a cocktail shaker with ice. Shake well. Strain contents over ice into a highball glass. Top with ginger beer and garnish with candied ginger and lemon wheel.<br />
+                                                <br />
+                                                New York mixologist Christopher Reyes created this recipe.<br />
+                                                <br />
+                                                <br />
+                                            </td>
+
+                                            <td width="328" style="padding:30px 10px 5px 10px; background:#ffffff;" valign="center" align="right"><a href="https://read.dmtmag.com/i/674578-cheers-may-2016" target="_blank"><img src="https://epgmedia.s3.amazonaws.com/email/cheers/CH_WeeklyEnewsletter/2016/images/FlipBook-May16.gif" style="border:none" width="300" height="250" alt="Ad"></a></td>
+                                        </tr>
+                                            <tr><td width="328" style="padding:30px 10px 5px 10px; background:#ffffff;" valign="top" align="right"></td>
+                                            </tr>
+                                    </tbody></table>
+                            <tbody><table>
+                             <tr>
+                                            <td>
+
+                                                <table cellpadding="0" cellspacing="0" border="0" align="center" width="728">
+                                        <tr>
+                                            <td valign="top" align="center" width="288">
+
+                                                     
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                                    </tbody>
+
+                    </td>
+                    <td width="12"></td>
+                </tr>
+            </table>
+                                    </table>
+        </td>
+    </tr>
+</table>
+<p align="center" style="text-align: center;"></p><p align="center"><span xml="lang">This email was sent to you on behalf of <span xml="lang">Cheers Magazine <br />  EPG Media LLC and Specialty Information Media, 10405 6th Avenue North, Suite 210, Plymouth, MN 55441 <br /> For more news and information visit </span><a href="https://cheersonline.com/"><span xml="lang">https://cheersonline.com/</span></a> and the
+            <a href="https://epgmediallc.com/subscribe/">
+				<span xml="lang">
+					Subscription Center
+				</span>
+			</a>
+            <span xml="lang">Copyright 2018 by EPG Media &amp; Specialty Information </span><br />
+<a href="https://epgmediallc.com/privacy-policy/" target="_blank">Privacy Policy</a><br />
+<a href="@{confirmunsubscribelink}@"><span xml="lang">opt out</span></a><br />
+            <span xml="lang"> </span><span xml="lang"><span xml="lang"></span></span><p align="center" style="text-align: center;"><span style="font-family: 'Calibri','sans-serif'; font-size: 10pt;" xml="lang"><br /><span style="color: red;" xml="lang"></span></span></p>
+            <custom name="opencounter" type="tracking"></custom>
+            </span></p></td></tr></table>
+</body>
+</html>

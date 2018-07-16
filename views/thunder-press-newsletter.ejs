@@ -1,0 +1,543 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title></title>
+    <style type="text/css">
+        /* Client-specific Styles */
+        #outlook a {
+            padding: 0;
+        }
+
+        /* Force Outlook to provide a "view in browser" menu link. */
+        body {
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            Margin: 0;
+            padding: 0;
+        }
+
+        /* Force Hotmail to display normal line spacing.  More on that: https://www.emailonacid.com/forum/viewthread/43/ */
+        #backgroundTable {
+            Margin: 0;
+            padding: 0;
+            width: 100% !important;
+            line-height: 100% !important;
+            background-color: #e7e7e7;
+        }
+
+        /* End reset */
+        p {
+            Margin: 1em 0;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+            display: block;
+            Margin: auto;
+        }
+
+        a {
+            color: #002C6B;
+        }
+
+        a img {
+            border: none;
+        }
+
+        /********************************************************************************************
+
+        User Styles
+
+        ********************************************************************************************/
+
+        /** Whisper Text **/
+        .whisperText td {
+            font: 14px Helvetica, Arial, sans-serif !important;
+            padding: 0.3em 0 !important;
+        }
+
+        /** Nav Bar Area **/
+        .navBar td {
+            text-align: center !important;
+            padding: 0.5em !important;
+            background-color: #000000;
+        }
+
+        .navBar a {
+            font: 18px 'Palatino Linotype', Palatino, serif !important;
+            Margin: auto !important;
+            color: #f8f8f8 !important;
+            text-decoration: none !important;
+        }
+
+        .navBar2 {
+            border-left: 3px solid #f8f8f8 !important;
+            text-align: center !important;
+        }
+
+        .arrowBar td {
+            text-align: center !important;
+        }
+
+        /** Ribbon Styling **/
+        .featureRibbon {
+            background-color: #002C6B;
+        }
+
+        .featureRibbon td {
+            color: #f8f8f8 !important;
+            padding: 10px 5px 10px 15px !important;
+            font: 26px 'Palatino Linotype', Palatino, serif !important;
+        }
+
+        /** Card Styling **/
+        .featureContainer {
+            Margin-bottom: 20px !important;
+        }
+
+        .featureBorder {
+            background-color: #ffffff;
+            border-bottom: 2px solid #e0e0e0 !important;
+            border-left: 1px solid #eaeaea !important;
+            border-right: 2px solid #e0e0e0 !important;
+        }
+
+        .smallFeature,
+        .appStore {
+            display: inline-block;
+            Margin: 15px 12px 20px !important;
+            border-top: 1px solid #eaeaea !important;
+        }
+
+        .smallFeature td,
+        .subscribeText {
+            padding: 6px 10px !important;
+        }
+
+        /** Text Formats **/
+        .smallFeatureCategory {
+            color: #676767 !important;
+            font: 16px 'Palatino Linotype', Palatino, serif !important;
+        }
+
+        .smallFeatureHeader {
+            color: #b40f0f !important;
+            font: bold 20px 'Palatino Linotype', Palatino, serif !important;
+        }
+
+        .featureText {
+            color: #676767 !important;
+            font: 18px Helvetica, Arial, sans-serif !important;
+            padding: 15px 30px !important;
+        }
+
+        .smallFeatureText {
+            color: #676767;
+            font: 16px Helvetica, Arial, sans-serif !important;
+            padding-bottom: 15px !important;
+        }
+
+        .smallFeatureText li {
+            font-size: 18px !important;
+            Margin-bottom: 20px !important;
+        }
+
+        .subscribeHeader {
+            color: #b40f0f !important;
+            font: bold 28px 'Palatino Linotype', Palatino, serif !important;
+            text-decoration: none !important;
+        }
+
+        .subscribeText {
+            color: #676767 !important;
+            font: bold 20px 'Palatino Linotype', Palatino, serif !important;
+        }
+
+        /** Images **/
+        .featureImage {
+            Margin: auto !important;
+            padding: 15px 10px 15px !important;
+            border-bottom: 2px solid #e0e0e0 !important;
+            text-align: center !important;
+        }
+
+        .socialMediaIcon img {
+            Margin: 20px !important;
+        }
+    </style>
+
+</head>
+<body yahoo="fix">
+<!--  -->
+
+<table cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+    <tr>
+        <td>
+            
+            <!-- Table 1 - Pre-text -->
+            <table class="whisperText" width="730" cellpadding="0" cellspacing="0" border="0" align="center">
+                <tr>
+                    <td valign="top" align="left">
+                        ThunderPress Enews - <%= month %> <%= day %>, <%= year %>
+                    </td>
+                    <td valign="top" align="right">
+                        <a class="Online Version" href="@{mv_online_version}@" style="color: #b40f0f;" target="_blank" choice="10">Click here to view online</a>
+                    </td>
+                </tr>
+            </table>
+            <!-- /Table 1 -->
+
+            <!-- Table 2 - Header -->
+            <table class="header" cellpadding="0" width="740" cellspacing="0" border="0" align="center">
+                <tr>
+                    <!--Logo-->
+                    <!--Logo-->
+                    <td align="center">
+                        <a href="https://www.thunderpress.net/" target="_blank"><img class="headerImage" src="https://epgmedia.s3.amazonaws.com/email/thunderpress/enewsletter/images/enews-header1.jpeg" alt="Thunder Press" Title="Thunder Press" width="720" /></a>
+                    </td>
+                    
+                </tr>
+            </table>
+            <!-- /Table 2 - Header -->
+    </br>
+   
+            <!-- Table 3 - NavBar -->
+            <table class="navBar" width="730" cellpadding="0" cellspacing="0" border="0" align="center">
+                <tr>
+                    <!--Motorcycles-->
+                    <td class="navBar1" style="text-decoration:none;">
+                        <a href="https://thunderpress.net/category/american-motorcycle-news" target="_blank"><strong>NEWS</strong></a>
+                    </td>
+                    <!--Gear-->
+                    <td class="navBar2">
+                        <a href="https://thunderpress.net/category/american-motorcycle-features" target="_blank"><strong>FEATURES</strong></a>
+                    </td>
+                    <!--Touring-->
+                    <td class="navBar2">
+                        <a href="https://thunderpress.net/category/motorcycle-rallies-events" target="_blank"><strong>RALLIES & EVENTS</strong></a>
+                    </td>
+                    <!--Blog-->
+                    <td class="navBar2">
+                        <a href="https://thunderpress.net/category/motorcycles" target="_blank"><strong>MOTORCYCLES</strong></a>
+                    </td>
+                    <!--Subscribe-->
+                    <td class="navBar2">
+                        <a href="https://simplecirc.com/subscribe/thunderpress-magazine" target="_blank"><strong>SUBSCRIBE</strong></a>
+                    </td>
+                </tr>
+            </table>
+            <br />
+
+            <!-- CUSTOM: leaderboard1 -->
+            <table class="featureContainer" border="0" align="center" width="740" style="width: 740px; max-width:740px;">
+				    <tr>
+				        <td height="10" colspan="4"></td>
+				    </tr>
+				        <tr>
+				            <td align="center" bgcolor="#ffffff" style="width:740px;vertical-align:top;">
+								<custom type="content" name="Leaderboard 1">
+								<p>!!! --- PUT AD HERE --- !!!</p>
+				            </td>
+				        </tr>
+				    <tr>
+				        <td height="10"></td>
+				    </tr>
+            </table>
+
+            <!-- Table 5 - Feature 1 -->
+            <table class="featureContainer" cellpadding="0" cellspacing="0" border="0" align="center">
+                <% for (let item of enews_one_items) { %>
+                <tr>
+                    <td width="730">
+                        <!-- Ribbon -->
+                        <table class="featureRibbon" cellpadding="0" cellspacing="0" border="0" align="center">
+                            <tr>
+                                <td width="730" align="left">
+                                    <a alias="Title-<%= item.title %>" href="<%= item.link %>" style="text-decoration:none !important; font-size: 24px; color: #ffffff;" target="_blank">
+				                    <strong><%= item.title %></strong>
+				                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- featureBody -->
+                        <table cellpadding="0" cellspacing="0" border="0" align="center">
+                            <tr>
+                                <td class="rightFlag" width="20" valign="top">
+                                    <img src="https://s3.amazonaws.com/epgmedia/email/thunderpress/THP-Enewsletter-2014-left-flag.png"
+                                         width="20" height="20"/>
+                                </td>
+                                <td class="featureBorder" width="690">
+                                    <table cellpadding="0" cellspacing="0" border="0" align="center">
+                                        <tr>
+                                            <!-- Image -->
+                                            <td class="featureImage">
+                                                <img src="<%= item.image %>" width="655" style="padding:0 0px 0px 10px; border:none; display:block" alt="<%= item.title %>"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="featureText" align="left">
+                                              <p>
+                                            <%- item.description %>
+								            &nbsp;
+                                                  <a alias="Read More-<%= item.title %>" href="<%= item.link %>" style="font-size:16px; color:#cd3134;white-space:nowrap" target="_blank">Read More</a>      
+                                              </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <% } %>
+                                </td>
+                                <td class="right" width="20"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+ 
+
+            <!-- Table 6 - Feature 2 -->
+            <table class="featureContainer" cellpadding="0" cellspacing="0" border="0" align="center">
+                <% for (let item of enews_two_items) { %>
+                <tr>
+                    <td width="730">
+                        <!-- Ribbon -->
+                        <table class="featureRibbon" cellpadding="0" cellspacing="0" border="0" align="center">
+                            <tr>
+                                <td width="730" align="left">
+                                    <a alias="Title-<%= item.title %>" href="<%= item.link %>" style="text-decoration:none !important; font-size: 24px; color: #ffffff;" target="_blank">
+				                    <strong><%= item.title %></strong>
+				                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- featureBody -->
+                        <table cellpadding="0" cellspacing="0" border="0" align="center">
+                            <tr>
+                                <td class="rightFlag" width="20" valign="top">
+                                    <img src="https://s3.amazonaws.com/epgmedia/email/thunderpress/THP-Enewsletter-2014-left-flag.png"
+                                         width="20" height="20"/>
+                                </td>
+                                <td class="featureBorder" width="690">
+                                    <table cellpadding="0" cellspacing="0" border="0" align="center">
+                                        <tr>
+                                            <!-- Image -->
+                                            <td class="featureImage">
+                                                <img src="<%= item.image %>" width="655" style="padding:0 0px 0px 10px; border:none; display:block" alt="<%= item.title %>"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="featureText" align="left">
+                                              <p>
+                                            <%- item.description %>
+								            &nbsp;
+                                                  <a alias="Read More-<%= item.title %>" href="<%= item.link %>" style="font-size:16px; color:#cd3134;white-space:nowrap" target="_blank">Read More</a>      
+                                              </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <% } %>
+                                </td>
+                                <td class="right" width="20"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- CUSTOM: leaderboard 2 -->
+            <table class="featureContainer" border="0" align="center" width="740px" style="width: 740px; max-width:740px;">
+				    <tr>
+				        <td height="10" colspan="4"></td>
+				    </tr>
+				        <tr>
+				            <td align="center" bgcolor="#ffffff" style="width:740px;vertical-align:top;">
+								<custom type="content" name="Leaderboard 1">
+								<p>!!! --- PUT AD HERE --- !!!</p>
+				            </td>
+				        </tr>
+				    <tr>
+				        <td height="10"></td>
+				    </tr>
+            </table>
+
+            <!-- Table 8 - Most Read -->
+            <table class="featureContainer" cellpadding="0" cellspacing="0" border="0" align="center">
+                <tr>
+                    <td width="730">
+                        <!-- Ribbon -->
+                        <table class="featureRibbon" cellpadding="0" cellspacing="0" border="0" align="center">
+                            <tr>
+                                <td width="730" align="left">
+                                    <span><strong>Featured Columns</strong></span>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- featureBody -->
+                        <table cellpadding="0" cellspacing="0" border="0" align="center">
+                            <tr>
+                                <td class="rightFlag" valign="top">
+                                    <img src="https://s3.amazonaws.com/epgmedia/email/thunderpress/THP-Enewsletter-2014-left-flag.png"
+                                         width="21" height="20"/>
+                                </td>
+                                <!-- Right Flag -->
+                              <td class="featureBorder" width="690">
+
+
+                                    <table class="smallFeature" width="600" cellpadding="0"
+                                           cellspacing="0" border="0" align="left">
+                                        <tr>
+                                            <td class="smallFeatureHeader" align="left">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smallFeatureText" align="left">
+                                                            <% for (let item of most_read_items) { %>
+									<table width="740" cellpadding="0" cellspacing="0" border="0" align="left">
+										<tr>
+                                              <td> 
+                                            <ul>
+											     
+												<li><a alias="Title-<%= item.title %>" href="<%= item.link %>" style="font-size:16px; color:#cd3134;" target="_blank">
+													<strong><%= item.title %></strong></li>
+												</a>
+											</ul>
+                                                </td>   
+										</tr>
+									</table>
+                    
+                      <% } %>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                 
+                                  
+                                    </td>
+                                <td class="right" width="20"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- CUSTOM: leaderboard 4 -->
+            <table class="featureContainer" border="0" align="center" width="740" style="width: 740px; max-width:740px;">
+				    <tr>
+				        <td height="10" colspan="4"></td>
+				    </tr>
+				        <tr>
+				            <td align="center" bgcolor="#ffffff" style="width:740px;vertical-align:top;">
+								<custom type="content" name="Leaderboard 1">
+								<p>!!! --- PUT AD HERE --- !!!</p>
+				            </td>
+				        </tr>
+				    <tr>
+				        <td height="10"></td>
+				    </tr>
+            </table>
+
+            <!-- Table 9 - Get More Thunder Press -->
+            <table class="featureContainer" cellpadding="0" cellspacing="0" border="0" align="center">
+                <tr>
+                    <td width="730">
+                        <!-- Ribbon -->
+                        <table class="featureRibbon" cellpadding="0" cellspacing="0" border="0" align="center">
+                            <tr>
+                                <td width="730" align="left">
+                                    <span><strong>Thunder Press on Social Media</strong></span>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- featureBody -->
+                        <table cellpadding="0" cellspacing="0" border="0" align="center">
+                            <tr>
+                                <td class="rightFlag" valign="top">
+                                    <img src="https://s3.amazonaws.com/epgmedia/email/thunderpress/THP-Enewsletter-2014-left-flag.png"
+                                         width="21" height="20"/>
+                                </td>
+                                <!-- Right Flag -->
+                                <td class="featureBorder" width="690">
+                                    
+                                    <!-- Social Media Icons -->
+                                    <table class="smallFeature featureBorder" cellpadding="0" cellspacing="0" border="0"
+                                           align="center">
+                                        <tr>
+                                            <td class="socialMediaIcon" align="center">
+                                                <a href="https://www.facebook.com/thunderpress/" target="_blank"><img
+                                                        src="https://epgmedia.s3.amazonaws.com/email/rider/2014/images/facebook.png"
+                                                        width="70" height="70"/></a>
+                                            </td>
+                                            <td class="socialMediaIcon" align="center">
+                                                <a href="https://www.instagram.com/thunderpress/"
+                                                   target="_blank"><img
+                                                        src="https://epgmedia.s3.amazonaws.com/email/rider/2014/images/instagram.png"
+                                                        width="70" height="70"/></a>
+                                            </td>
+                                            <td class="socialMediaIcon" align="center">
+                                                <a href="https://www.youtube.com/channel/UC8_Ot7XldqccpqaBrWqrMUg" target="_blank"><img
+                                                        src="https://epgmedia.s3.amazonaws.com/email/rider/2014/images/youtube.png"
+                                                        width="70" height="70"/></a>
+                                            </td>
+                                            <td class="socialMediaIcon" align="center">
+                                                <a href="https://www.pinterest.com/thunderpress/" target=""><img
+                                                        src="https://epgmedia.s3.amazonaws.com/email/rider/2014/images/pinterest.png"
+                                                        width="70" height="70"/></a>
+                                            </td>
+                                            <td class="socialMediaIcon" align="center">
+                                                <a href="https://twitter.com/ThunderPress?ref_src=twsrc%5Etfw&ref_url=http%3A%2F%2Fthunderpress.net%2F" target="_blank"><img
+                                                        src="https://epgmedia.s3.amazonaws.com/email/rider/2014/images/twitter.png"
+                                                        width="70" height="70"/></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="right" width="20"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- /Table 9 - Get More Thunder Press -->
+
+            <!-- Table 10 - Close -->
+            <table class="footer" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                <tr>
+                    <!--  -->
+                    <td height="5" style="background-color:#000000;"><br></td>
+                </tr>
+            </table>
+            <!-- /Table 10 - Close -->
+
+        </td>
+    </tr>
+</table>
+<table cellpadding="10" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+    <td align="center"><font
+            style="font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size:12px;">This
+        email was sent to you on behalf of <em>ThunderPress Magazine</em>
+        <br/>
+        For more news and information visit <a href="https://www.thunderpress.net">www.ThunderPress.net</a><br/>
+        EPG Media & Specialty Information<br/>
+        10405 Sixth Ave N, Suite 210, Minneapolis, MN 55441 <br/>
+        <span xml="lang">Copyright 2018 by EPG Media &amp; Specialty Information </span><br />
+        <a href="https://epgmediallc.com/privacy-policy/" target="_blank">Privacy Policy</a><br />
+        <a href="@{forwardtoafriendlink}@">Forward to a friend</a> – <a href="@{confirmunsubscribelink}@">opt
+            out</a> -  <a href="https://www.epgmediallc.com/subscribe">
+				<span xml="lang">
+					Subscription Center
+				</span>
+			</a></font><custom name="opencounter" type="tracking">
+    </td>
+</tr>
+</table>
+
+<!-- End of wrapper table -->
+</body>
+</html>

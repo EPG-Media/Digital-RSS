@@ -1,0 +1,17 @@
+{
+	"template": "https://epgmedia.s3.amazonaws.com/DigitalRSS/views/arbor-age-newsletter.ejs",
+	"feeds": [
+		{
+			"name": "featured_items",
+			"link": "https://arborage.com/category/featured-articles?feed=xtxml"
+		},
+		{
+			"name": "daily_items",
+			"link": "https://arborage.com/category/daily-news?feed=xtxml"
+		},
+		{
+			"name": "product_items",
+			"link": "https://arborage.com/category/product-news?feed=xtxml"
+		}
+	]
+}

@@ -3,19 +3,19 @@
 	"feeds": [
 	  {
 			"name": "enews_one_items",
-			"link": "https://womanrider.com/category/reviews/bikes/?feed=xtxml"
+			"link": "https://womanrider.com/category/enews-one/?feed=xtxml"
 		},
 		{
 			"name": "enews_two_items",
-			"link": "https://womanrider.com/category/community/?feed=xtxml"
+			"link": "https://womanrider.com/category/enews-two/?feed=xtxml"
 		},
 		{
 			"name": "enews_three_items",
-			"link": "https://womanrider.com/category/fitness/?feed=xtxml"
+			"link": "https://womanrider.com/category/enews-three/?feed=xtxml"
 		},
 		{
 			"name": "enews_four_items",
-			"link": "https://womanrider.com/category/new-girls/learn-to-rider/?feed=xtxml"
+			"link": "https://womanrider.com/category/enews-four/?feed=xtxml"
 		},
 		{
 			"name": "editors_picks_items",

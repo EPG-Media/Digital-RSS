@@ -13,7 +13,7 @@
 	- Refer to ```package.json``` file for complete list of dependancies
 
 
-### Installation
+### Installation:
 1. ###### Configure Exact-Target-XML-Feed Wordpress Plugin with attached categories to specific POSTS
 	- GitHub Repo: https://github.com/EPG-Media/exact-target-xml-feed
 

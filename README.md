@@ -1,5 +1,5 @@
 
-# Exact Target XML
+# Exact Target XML (WordPress Plugin)
 
 ### Description:
 ###### App is a WordPress plugin that is used to convert posts into an XML feed, used in conjunction with DigitalRSS node app for enews/eblast e-mailings.

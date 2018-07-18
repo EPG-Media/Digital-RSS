@@ -17,6 +17,7 @@
 	2. See http://ejs.co for official documentation.
 - Create a config file.
 	1. A config file is just a javascript file that exports an object with a specific structure:
+		``
 			{
 				"template": "<LINK?PATH TO EJS TEMPLATE>",
 				"feeds": [
@@ -31,7 +32,7 @@
 					},
 				]
 			}
-
+		``
 
 		* NOTE 1: the order of the list of names in the config must correspond to the order of the list of xml feed links.
 		* NOTE 2: names can contain underscores, but not dashes.

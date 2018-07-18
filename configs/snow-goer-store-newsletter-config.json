@@ -1,0 +1,34 @@
+
+{
+	"template": "https://epgmedia.s3.amazonaws.com/DigitalRSS/views/snow-goer-store-newsletter.ejs",
+	"feeds": [
+	  {
+			"name": "enews_one_items",
+			"link": "https://snowgoerstore.com/category/enews-one/?feed=xtxml"
+		},
+		{
+			"name": "enews_two_items",
+			"link": "https://snowgoerstore.com/category/enews-two/?feed=xtxml"
+		},
+		{
+			"name": "enews_three_items",
+			"link": "https://snowgoerstore.com/category/enews-three/?feed=xtxml"
+		},
+		{
+			"name": "enews_four_items",
+			"link": "https://snowgoerstore.com/category/enews-four/?feed=xtxml"
+		},
+    {
+			"name": "enews_five_items",
+			"link": "https://snowgoerstore.com/category/enews-five/?feed=xtxml"
+		},
+		{
+			"name": "editors_picks_items",
+			"link": "https://snowgoerstore.com/category/editors-picks/?feed=xtxml"
+		},
+		{
+			"name": "most_viewed_items",
+			"link": "https://snowgoerstore.com/category/most-viewed/?feed=xtxml"
+		}
+	]
+}

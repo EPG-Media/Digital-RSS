@@ -7,7 +7,7 @@
 		"name": "power-sports-business",
 		"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/power-sports-business-newsletter-config.json"
 	},
-    {
+  {
 		"name": "power-sports-business-aimexpo",
 		"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/power-sports-business-aimexpo-newsletter-config.json"
 	},
@@ -15,7 +15,7 @@
 		"name": "outdoor-power-equipment",
 		"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/outdoor-power-equipment-newsletter-config.json"
 	},
-    {
+  {
 		"name": "outdoor-power-equipment-redesign",
 		"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/outdoor-power-equipment-newsletter-redesign-config.json"
 	},
@@ -23,7 +23,7 @@
 		"name": "landscape-irrigation",
 		"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/landscape-irrigation-newsletter-config.json"
 	},
-    {
+  {
 		"name": "landscape-business",
 		"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/landscape-business-newsletter-config.json"
 	},
@@ -35,35 +35,39 @@
 		"name": "sports-turf",
 		"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/sports-turf-online-newsletter-config.json"
 	},
-    {
+  {
 		"name": "sports-turf-redesign",
 		"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/sports-turf-online-newsletter-redesign-config.json"
 	},
-    {
+  {
 		"name": "boating-industry-twenty",
 		"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/boating-inudstry-newsletter-twenty-config.json"
 	},
-    {
+  {
 		"name": "boating-industry-ten",
 		"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/boating-inudstry-newsletter-ten-config.json"
 	},
-    {
+  {
 		"name": "snow-goer",
 		"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/snow-goer-newsletter-config.json"
 	},
-    {
+	{
+		"name": "snow-goer-store",
+		"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/snow-goer-store-newsletter-config.json"
+	},
+  {
 		"name": "rider",
 		"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/rider-newsletter-config.json"
 	},
-    {
+  {
 		"name": "cheers",
 		"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/cheers-newsletter-config.json"
 	},
-    {
+  {
 		"name": "beveerage-dynamics",
 		"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/beverage-dynamics-newsletter.json"
 	},
-    {
+  {
 		"name": "thunder-press",
 		"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/thunder-press-newsletter-config.json"
 	},

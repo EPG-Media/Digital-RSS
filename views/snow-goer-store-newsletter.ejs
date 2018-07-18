@@ -45,12 +45,19 @@
 /* ----------- */
 /* USER STYLES */
 /* ----------- */
-  .whisperText td {
+  .whisperText {
     font: 14px Helvetica, Arial, sans-serif !important;
     padding: 0.3em 0 !important;
   }
+  .header {
+    background-color: #000000;
+  }
   .headerImage{
-    width: 52%;
+    /* width: 40%; */
+  }
+  .navBar {
+    border-top: 2px solid #ffffff;
+    width: 740px;
   }
   .navBar td {
     text-align: center !important;
@@ -159,12 +166,12 @@
         <!-- logo container -->
         <table class="header" cellpadding="0" width="740" cellspacing="0" border="0" align="center">
           <tr>
-            <td align="center">
-              <a href="https://snowgoerstore.com/" target="_blank"><img class="headerImage" src="https://epgmedia.s3.amazonaws.com/email/Woman+Rider/2018/images/wr-header-logo.png" alt="snow goer store" Title="Snow goer store" width="720" /></a>
+            <td>
+              <a href="https://snowgoerstore.com/" target="_blank"><img class="headerImage" src="https://snowgoerstore.com/wp-content/uploads/2018/06/snowgoer-shop-1.jpg" alt="snow goer store" Title="Snow goer store" width="720" /></a>
             </td>
           </tr>
         </table>
-        </br>
+
         <!-- nav bar -->
         <table class="navBar" width="730" cellpadding="0" cellspacing="0" border="0" align="center">
           <tr>
@@ -172,10 +179,10 @@
               <a href="https://snowgoerstore.com/" target="_blank"><strong>Shop</strong></a>
             </td>
             <td class="navBar2">
-              <a href="https://womanrider.com/category/community/?feed=xtxml" target="_blank"><strong>Community</strong></a>
+              <a href="http://snowgoer.com/category/latest-news/" target="_blank"><strong>News</strong></a>
             </td>
             <td class="navBar2">
-              <a href="https://womanrider.com/category/new-girls/?feed=xtxml" target="_blank"><strong>New Girls</strong></a>
+              <a href="http://snowgoer.com/category/gear-tests/" target="_blank"><strong>Gear Tests</strong></a>
             </td>
             <td class="navBar2">
               <a href="http://snowgoer.com/category/snowmobile-tech-tips/" target="_blank"><strong>Tech</strong></a>
@@ -391,7 +398,51 @@
             </tr>
           <% } %>
         </table>
-
+        <!-- enews five container -->
+        <table class="featureContainer" cellpadding="0" cellspacing="0" border="0" align="center">
+          <% for (let item of enews_five_items) { %>
+            <tr>
+              <td width="730">
+                <table class="featureRibbon" cellpadding="0" cellspacing="0" border="0" align="center">
+                  <tr>
+                    <td width="730" align="left">
+                      <a alias="Title-<%= item.title %>" href="<%= item.link %>" style="text-decoration:none !important; font-size: 24px; color: #ffffff;" target="_blank">
+                        <strong><%= item.title %></strong>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+                <table cellpadding="0" cellspacing="0" border="0" align="center">
+                  <tr>
+                    <td class="rightFlag" width="20px" valign="top">
+                      <img src="http://epgmedia.s3.amazonaws.com/Woman%20Rider/Images/Rider-Enewsletter-2014-left-flag.png"
+                      width="20" height="20"/>
+                    </td>
+                    <td class="featureBorder" width="690">
+                      <table cellpadding="0" cellspacing="0" border="0" align="center">
+                        <tr>
+                          <td class="featureImage">
+                            <img src="<%= item.image %>" width="655" style="padding:0 0px 0px 10px; border:none; display:block" alt="<%= item.title %>"/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="featureText" align="left">
+                            <p>
+                              <%- item.description %>
+                              &nbsp;
+                              <a alias="Read More-<%= item.title %>" href="<%= item.link %>" style="font-size:16px; color:#cd3134;white-space:nowrap" target="_blank">Read More</a>
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="right" width="20px"></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          <% } %>
+        </table>
         <!-- editors pick container -->
         <table class="featureContainer" cellpadding="0" cellspacing="0" border="0" align="center">
           <tr>
@@ -459,7 +510,7 @@
               <table class="featureRibbon" cellpadding="0" cellspacing="0" border="0" align="center">
                 <tr>
                   <td width="730" align="left">
-                    <span><strong>Woman Rider on Social Media</strong></span>
+                    <span><strong>Snow Goer on Social Media</strong></span>
                   </td>
                 </tr>
               </table>
@@ -473,10 +524,10 @@
                     <table class="smallFeature featureBorder" cellpadding="0" cellspacing="0" border="0" align="center">
                       <tr>
                         <td class="socialMediaIcon" align="center">
-                          <a href="https://www.facebook.com/womanriderwebsite/" target="_blank"><img src="https://epgmedia.s3.amazonaws.com/email/rider/2014/images/facebook.png" width="70" height="70"/></a>
+                          <a href="https://www.facebook.com/SnowGoerMagazine/" target="_blank"><img src="https://epgmedia.s3.amazonaws.com/email/rider/2014/images/facebook.png" width="70" height="70"/></a>
                         </td>
                         <td class="socialMediaIcon" align="center">
-                          <a href="https://www.instagram.com/womanrider/" target="_blank"><img src="https://epgmedia.s3.amazonaws.com/email/rider/2014/images/instagram.png" width="70" height="70"/></a>
+                          <a href="https://www.instagram.com/snowgoermag/" target="_blank"><img src="https://epgmedia.s3.amazonaws.com/email/rider/2014/images/instagram.png" width="70" height="70"/></a>
                         </td>
                       </tr>
                     </table>
@@ -505,9 +556,9 @@
     <tr>
       <td align="center">
         <font style="font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size:12px;">
-          This email was sent to you on behalf of <em>WomanRider Magazine</em>
+          This email was sent to you on behalf of <em>Snow Goer Store</em>
           <br/>
-          For more news and information visit <a href="https://www.womanrider.com">www.WomanRider.com</a>
+          For more news and information visit <a href="https://snowgoerstore.com">www.snowgoerstore.com</a>
           <br/>
           EPG Media & Specialty Information
           <br/>

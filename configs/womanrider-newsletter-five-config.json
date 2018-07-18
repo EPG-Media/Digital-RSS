@@ -1,0 +1,45 @@
+{
+	"template": "https://epgmedia.s3.amazonaws.com/DigitalRSS/views/womanrider-newsletter-five.ejs",
+	"feeds": [
+	  {
+			"name": "enews_one_items",
+			"link": "https://womanrider.com/category/enews-one/?feed=xtxml"
+		},
+		{
+			"name": "enews_two_items",
+			"link": "https://womanrider.com/category/enews-two/?feed=xtxml"
+		},
+		{
+			"name": "enews_three_items",
+			"link": "https://womanrider.com/category/enews-three/?feed=xtxml"
+		},
+		{
+			"name": "enews_four_items",
+			"link": "https://womanrider.com/category/enews-four/?feed=xtxml"
+		},
+		{
+			"name": "editors_picks_items",
+			"link": "https://womanrider.com/category/editors-picks/?feed=xtxml"
+		},
+		{
+			"name": "most_read_items",
+			"link": "https://womanrider.com/category/gear/?feed=xtxml"
+		},
+		{
+			"name": "reviews_items",
+			"link": "https://womanrider.com/category/reviews/?feed=xtxml"
+		},
+		{
+			"name": "community_items",
+			"link": "https://womanrider.com/category/community/?feed=xtxml"
+		},
+		{
+			"name": "new_girls_items",
+			"link": "https://womanrider.com/category/new-girls/?feed=xtxml"
+		},
+		{
+			"name": "how_do_i_items",
+			"link": "https://womanrider.com/category/how-do-i/?feed=xtxml"
+		}
+	]
+}

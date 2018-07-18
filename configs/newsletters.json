@@ -78,5 +78,9 @@
 	{
 	"name": "woman-rider-three",
 	"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/womanrider-newsletter-three-config.json"
+	},
+	{
+	"name": "woman-rider-five",
+	"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/womanrider-newsletter-five-config.json"
 	}
 ]

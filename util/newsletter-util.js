@@ -1,5 +1,21 @@
-exports.months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
+// exporting months
+exports.months = [
+	"January",
+	"February",
+	"March",
+	"April",
+	"May",
+	"June",
+	"July",
+	"August",
+	"September",
+	"October",
+	"November",
+	"December"
+];
+
+// getting and exporting rss data from WP feed
 exports.getContent  = function (url) {
 	return new Promise((resolve, reject) => {
 		const lib = url.startsWith('https') ? require('https') : require('http');

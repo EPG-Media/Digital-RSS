@@ -62,3 +62,7 @@
 			}
 		```
 		- NOTE: ``` ./DigitalRSS/configs/newsletter.json``` format is an array of objects
+
+5. Starting Server (server is not used with this app/served with AWS)
+	- ```npm start``` starts Server
+	- ```npm test``` starts server with nodemon

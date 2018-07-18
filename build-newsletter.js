@@ -1,9 +1,11 @@
 
-const ejs     = require ("ejs");
-const fs      = require ("fs");
+// defining dependancies
+const ejs = require ("ejs");
+const fs = require ("fs");
 const convert = require ("xml-to-json-promise");
-const util    = require ("./util/newsletter-util.js");
+const util = require ("./util/newsletter-util.js");
 
+// eporting newsletter build
 exports.build_newsletter = function (config) {
 	Promise.all (
 		config.links.map (link => util.getContent (link))

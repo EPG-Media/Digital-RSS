@@ -1,5 +1,8 @@
+
+// requiring dependancies
 const app = require ('./build-newsletter.js');
 
+// defining build routes
 app.build_newsletter (require ('./configs/arbor-age-newsletter-config.js').config);
 app.build_newsletter (require ('./configs/outdoor-power-equipment-newsletter-config.js').config);
 app.build_newsletter (require ('./configs/power-sports-business-newsletter-config.js').config);

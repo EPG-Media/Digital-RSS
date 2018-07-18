@@ -203,51 +203,51 @@
 																										<% } %>
 																										<% } %>
 
-																										<!-- Daily Items: END -->
 
-																										<table cellpadding="0" cellspacing="0" border="0" align="center" width="586">
-																											<tr>
-																												<td valign="top" align="left" width="288">
-																													<table cellpadding="0" cellspacing="0" border="0" align="center" width="586">
-																														<tr>
-																															<td valign="top" align="left" width="288"></td>
-																														</tr>
-																													</table>
-																												</td>
-																											</tr>
-																										</table>
 
-																										<!-- Product Items: BEGIN -->
+										<table cellpadding="0" cellspacing="0" border="0" align="center" width="586">
+											<tr>
+												<td valign="top" align="left" width="288">
+													<table cellpadding="0" cellspacing="0" border="0" align="center" width="586">
+														<tr>
+															<td valign="top" align="left" width="288"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
 
-																										<table cellpadding="0" cellspacing="0" border="0">
-																											<tr>
-																												<td height="10" ></td>
-																											</tr>
-																											<tr>
-																												<td width="586" bgcolor="#7b7b7b" height="24" valign="middle" align="left" style="color:#FFFFFF; font: 400 18px Arial, Helvetica, sans-serif; text-align:left; padding:5px 0px 5px 15px;">Product News</td>
-																											</tr>
-																											<% for (let item of product_items) { %>
-																												<tr>
-																													<td>
-																														<table width="586" cellpadding="0" cellspacing="0" border="0" align="left">
-																															<tr>
-																																<td style="padding:10px 10px 5px 0;font-family: Arial; font-size: 12px; line-height: 18px;" valign="top">
-																																	<a alias="Title-<%= item.title %>" href="<%= item.link %>" style="font-size:14px; color:#000000;" target="_blank">
-																																		<strong><%= item.title %></strong>
-																																	</a>
-																																	<br/>
-																																	<%- item.description %>
-																																	&nbsp;
-																																	<a alias="Title-<%= item.title %>" href="<%= item.link %>" style="font-size:13px; color:#168831;white-space:nowrap" target="_blank">Read More</a>
-																																</td>
-																															</tr>
-																														</table>
-																													</td>
-																												</tr>
-																												<% } %>
-																											</table>
 
-																															<!-- Product Items: END -->
+
+										<table cellpadding="0" cellspacing="0" border="0">
+											<tr>
+												<td height="10" ></td>
+											</tr>
+											<tr>
+												<td width="586" bgcolor="#7b7b7b" height="24" valign="middle" align="left" style="color:#FFFFFF; font: 400 18px Arial, Helvetica, sans-serif; text-align:left; padding:5px 0px 5px 15px;">Product News</td>
+											</tr>
+											<% for (let item of product_items) { %>
+												<tr>
+													<td>
+														<table width="586" cellpadding="0" cellspacing="0" border="0" align="left">
+															<tr>
+																<td style="padding:10px 10px 5px 0;font-family: Arial; font-size: 12px; line-height: 18px;" valign="top">
+																	<a alias="Title-<%= item.title %>" href="<%= item.link %>" style="font-size:14px; color:#000000;" target="_blank">
+																		<strong><%= item.title %></strong>
+																	</a>
+																	<br/>
+																	<%- item.description %>
+																	&nbsp;
+																	<a alias="Title-<%= item.title %>" href="<%= item.link %>" style="font-size:13px; color:#168831;white-space:nowrap" target="_blank">Read More</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											<% } %>
+										</table>
+
+
 
 									</td>
 								</tr>

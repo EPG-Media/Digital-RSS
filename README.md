@@ -1,3 +1,4 @@
+
 # Exact Target XML
 
 ### Description:
@@ -9,6 +10,7 @@
 - NodeJS
 - EJS
 - XML To JSON Promise
+	- Refer to ```package.json``` file for complete list of dependancies
 
 
 ### Installation
@@ -45,7 +47,7 @@
 		```
 	- See http://ejs.co for official documentation
 
-1. ###### Add Template to newsletter.json file
+4. ###### Add Template to newsletter.json file
 	- Add Enews Letter to UI Select Option
 	- Path: ``./DigitalRSS/configs/newsletter.json``
 		```

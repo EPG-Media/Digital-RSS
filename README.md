@@ -17,6 +17,7 @@
 	2. See http://ejs.co for official documentation.
 - Create a config file.
 	1. A config file is just a javascript file that exports an object with a specific structure:
+	
 		``
 			{
 				"template": "<LINK?PATH TO EJS TEMPLATE>",

@@ -1,42 +1,38 @@
-Author
-======
-* Name:     Joseph Gaspar
-* Nickname: Joe Gee
-* Website:  Joe-Gee.com
-* Email:    josephg21886@gmail.com, Joe@Joe-Gee.com
+# Exact Target XML
 
-How to create a new newsletter from xml feeds:
-==============================================
-1. Create EJS template.
-	1. EJS is javascript inside tags <% ... %> mixed in with HTML
-		* example:
-			```
-			<% if (true) { %>
-				<p> This section of HTML will be included in the final HTML output </p>
-			<% } else { %>
-				<p> This section of HTML will not be included in the final HTML output </p>
-			<% } %>
-			<% /* This is a Javascript comment and will not appear in the final output */ %>
-			<%# This is also a comment, but it uses the EJS style %>
-			```
+### Description:
+###### App is a WordPress plugin that is used to convert posts into an XML feed, used in conjunction with DigitalRSS node app for enews/eblast e-mailings.
+
+
+### Technologies:
+- HTML/CSS
+- NodeJS
+- EJS
+- XML To JSON Promise
+
+
+### Installation
+- Create EJS template.
+	1. Create an EJS template
 	2. See http://ejs.co for official documentation.
-2. Create a config file.
+- Create a config file.
 	1. A config file is just a javascript file that exports an object with a specific structure:
-		* example:
-			```
-			exports.config = {
-				view:   "./views/name-of-template.ejs",
-				output: "./output/name-of-output-html.html",
-				links: [
-					"http://some-link-url.com/category/featured-articles/?feed=xtxml",
-					"http://etc.com ..."
-				],
-				names: [
-					"featured_items",
-					"etc_items"
+			{
+				"template": "<LINK?PATH TO EJS TEMPLATE>",
+				"feeds": [
+				  {
+						"name": "SPECIFIC CATEGORY_items",
+						"link": "<YOUR LINK TO SPECIFIC CATEGORY XML FEED>"
+					},
+					<!-- example -->
+					{
+						"name": "enews_two_items",
+						"link": "https://womanrider.com/category/enews-two/?feed=xtxml"
+					},
 				]
-			};
-			```
+			}
+
+
 		* NOTE 1: the order of the list of names in the config must correspond to the order of the list of xml feed links.
 		* NOTE 2: names can contain underscores, but not dashes.
 		* NOTE 3: names are the same names of lists of items referenced in the template files.

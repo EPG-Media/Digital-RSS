@@ -9,7 +9,7 @@
 - HTML/CSS
 - NodeJS
 - EJS
-- XML To JSON Promise
+- XML to JSON Promise
 	- Refer to ```package.json``` file for complete list of dependancies
 
 

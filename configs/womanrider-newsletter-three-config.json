@@ -1,5 +1,5 @@
 {
-	"template": "https://epgmedia.s3.amazonaws.com/DigitalRSS/views/womanrider-newsletter.ejs",
+	"template": "https://epgmedia.s3.amazonaws.com/DigitalRSS/views/womanrider-newsletter-three.ejs",
 	"feeds": [
 	  {
 			"name": "enews_one_items",

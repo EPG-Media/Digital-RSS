@@ -76,7 +76,7 @@
 		"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/synthetic-turf-insider-newsletter-redesign-config.json"
 	},
 	{
-	"name": "woman-rider",
-	"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/womanrider-newsletter-config.json"
+	"name": "woman-rider-three",
+	"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/womanrider-newsletter-three-config.json"
 	}
 ]

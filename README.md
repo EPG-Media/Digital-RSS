@@ -12,13 +12,13 @@
 
 
 ### Installation
-- Create EJS template.
-	1. Create an EJS template
-	2. See http://ejs.co for official documentation.
-- Create a config file.
-	1. A config file is just a javascript file that exports an object with a specific structure:
-	
-		``
+1. ###### Configure Exact-Target-XML-Feed Wordpress Plugin with attached categories to specific POSTS
+	- GitHub Repo: https://github.com/EPG-Media/exact-target-xml-feed
+
+2. ###### Create a config file
+	- Create ``config.json`` file using template below (each ejs template should have their own ``config.json`` file)
+	- Path: ``./DigitalRSS/configs/ ``
+		```
 			{
 				"template": "<LINK?PATH TO EJS TEMPLATE>",
 				"feeds": [
@@ -33,16 +33,30 @@
 					},
 				]
 			}
-		``
+		```
 
-		* NOTE 1: the order of the list of names in the config must correspond to the order of the list of xml feed links.
-		* NOTE 2: names can contain underscores, but not dashes.
-		* NOTE 3: names are the same names of lists of items referenced in the template files.
-		* Example: `<% for (let item of featured_items) { %>`
-3. Add line to the app.js file:
-	* Example: `app.build_newsletter (require ("./configs/some-config-file.js").config);`
-4. Run the app to compile the templates into HTML
-	* On the command line, make sure your current working directory is the directory with this README.md file in it.
-	* type: `node app.js`
-	* Please be patient, as the program has to access the xml feeds, which could take seconds.
-	* Compiled HTML Output is sent to the output directory.
+3. ###### Create EJS template
+	- Create an EJS template file including wrapper
+	- Path: ``./DigitalRSS/views/``
+		```
+			<% for (let item of CATEGORY_NAME_SET_IN_CONFIG.json_items) { %>
+			<!-- elements being looped on go here -->
+			<% } %>
+		```
+	- See http://ejs.co for official documentation
+
+1. ###### Add Template to newsletter.json file
+	- Add Enews Letter to UI Select Option
+	- Path: ``./DigitalRSS/configs/newsletter.json``
+		```
+			{
+				"name": "NAME TO APPEAR IN SELECT OPTION",
+				"config": "<LINK TO CONFIG.JSON FILE>"
+			}
+			<!-- example -->
+			{
+				"name": "snow-goer-store",
+				"config": "https://epgmedia.s3.amazonaws.com/DigitalRSS/configs/snow-goer-store-newsletter-config.json"
+			}
+		```
+		- NOTE: ``` ./DigitalRSS/configs/newsletter.json``` format is an array of objects
